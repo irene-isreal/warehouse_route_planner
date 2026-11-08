@@ -6,8 +6,22 @@ from .fuzzy import MAX_RANGE, MAX_TURN
 
 ROBOT_RADIUS = 0.3
 GOAL_TOLERANCE = 0.4
-SENSOR_ANGLE = math.radians(45)
 DT = 0.1
+
+# Ray angles (radians relative to heading, positive = left) that feed each of the three
+# readings the controllers receive. Each reading is the minimum over its rays.
+SENSOR_SUITES = {
+    "3-ray": {
+        "left": (math.radians(45),),
+        "front": (0.0,),
+        "right": (-math.radians(45),),
+    },
+    "7-ray": {
+        "left": (math.radians(45), math.radians(90)),
+        "front": (-math.radians(20), 0.0, math.radians(20)),
+        "right": (-math.radians(45), -math.radians(90)),
+    },
+}
 
 
 @dataclass
@@ -61,7 +75,16 @@ def ray_distance(x, y, angle, obstacles, max_range=MAX_RANGE):
     return best
 
 
-def simulate(world, controller, start, goal, max_steps=600):
+def read_sensors(obstacles, x, y, theta, suite="3-ray"):
+    """Return (left, front, right) readings for the chosen sensor suite."""
+    angles = SENSOR_SUITES[suite]
+    return tuple(
+        min(ray_distance(x, y, theta + a, obstacles) for a in angles[key])
+        for key in ("left", "front", "right")
+    )
+
+
+def simulate(world, controller, start, goal, max_steps=600, sensors="3-ray"):
     x, y = start
     theta = math.atan2(goal[1] - y, goal[0] - x)
     path_length, min_clear = 0.0, float("inf")
@@ -70,9 +93,7 @@ def simulate(world, controller, start, goal, max_steps=600):
     outcome, step = "timeout", 0
 
     for step in range(1, max_steps + 1):
-        left = ray_distance(x, y, theta + SENSOR_ANGLE, world.obstacles)
-        front = ray_distance(x, y, theta, world.obstacles)
-        right = ray_distance(x, y, theta - SENSOR_ANGLE, world.obstacles)
+        left, front, right = read_sensors(world.obstacles, x, y, theta, sensors)
 
         bearing = math.atan2(goal[1] - y, goal[0] - x) - theta
         bearing = math.atan2(math.sin(bearing), math.cos(bearing))  # wrap to [-pi, pi]

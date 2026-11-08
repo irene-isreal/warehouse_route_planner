@@ -1,5 +1,5 @@
 from planner.fuzzy import fuzzy_controller, reactive_controller, trap
-from planner.navigation import World, ray_distance, simulate
+from planner.navigation import World, ray_distance, read_sensors, simulate
 
 
 def test_trapezoid_membership_values():
@@ -41,8 +41,25 @@ def test_ray_distance():
     assert ray_distance(0.0, 0.0, 1.5707963, obstacles, max_range=10.0) == 10.0  # ray misses
 
 
+def test_seven_ray_suite_sees_obstacle_beside_robot():
+    obstacles = [(0.0, 1.0, 0.4)]   # directly to the left of a robot at the origin heading +x
+    left3, _, _ = read_sensors(obstacles, 0.0, 0.0, 0.0, "3-ray")
+    left7, _, _ = read_sensors(obstacles, 0.0, 0.0, 0.0, "7-ray")
+    assert left3 == 3.0                 # the 45-degree ray misses it
+    assert abs(left7 - 0.6) < 1e-9      # the 90-degree ray hits its surface at 0.6 m
+
+
+def test_seven_ray_suite_sees_slightly_off_axis_obstacle_ahead():
+    obstacles = [(2.0, 0.5, 0.3)]       # ahead and 0.5 m to the left of the centreline
+    _, front3, _ = read_sensors(obstacles, 0.0, 0.0, 0.0, "3-ray")
+    _, front7, _ = read_sensors(obstacles, 0.0, 0.0, 0.0, "7-ray")
+    assert front3 == 3.0                # the centre ray passes beside it
+    assert front7 < 2.0                 # the +20 degree ray hits it
+
+
 def test_both_controllers_reach_goal_in_empty_world():
     world = World(20.0, [])
     for ctrl in (fuzzy_controller, reactive_controller):
-        ep = simulate(world, ctrl, (1.0, 1.0), (10.0, 10.0))
-        assert ep.outcome == "success"
+        for suite in ("3-ray", "7-ray"):
+            ep = simulate(world, ctrl, (1.0, 1.0), (10.0, 10.0), sensors=suite)
+            assert ep.outcome == "success"
