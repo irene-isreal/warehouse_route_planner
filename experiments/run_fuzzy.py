@@ -1,88 +1,48 @@
-import os
-
-import matplotlib.pyplot as plt
-import pandas as pd
-from matplotlib.patches import Circle
-
-from planner.fuzzy import fuzzy_controller, reactive_controller
-from planner.navigation import random_world, simulate
-
-RESULTS = "results"
-os.makedirs(RESULTS, exist_ok=True)
-START, GOAL = (1.5, 1.5), (18.5, 18.5)
-CONTROLLERS = {"Fuzzy": fuzzy_controller, "Reactive (thresholds)": reactive_controller}
+from planner.fuzzy import fuzzy_controller, reactive_controller, trap
+from planner.navigation import World, ray_distance, simulate
 
 
-def run(densities=(6, 12, 18), worlds=50):
-    rows = []
-    for n in densities:
-        for seed in range(worlds):
-            world = random_world(seed, n, start=START, goal=GOAL)
-            for name, ctrl in CONTROLLERS.items():
-                ep = simulate(world, ctrl, START, GOAL)
-                rows.append({"obstacles": n, "seed": seed, "controller": name,
-                             "outcome": ep.outcome, "steps": ep.steps,
-                             "path_length": ep.path_length,
-                             "min_clearance": ep.min_clearance,
-                             "smoothness": ep.smoothness})
-    df = pd.DataFrame(rows)
-    df.to_csv(f"{RESULTS}/fuzzy.csv", index=False)
-    return df
+def test_trapezoid_membership_values():
+    assert trap(0.5, 0, 1, 1, 2) == 0.5
+    assert trap(1.0, 0, 1, 1, 2) == 1.0
+    assert trap(2.0, 0, 1, 1, 2) == 0.0
+    assert trap(-1.0, 0, 1, 1, 2) == 0.0
+    assert trap(0.0, 0, 0, 1, 2) == 1.0   # left shoulder
 
 
-def outcome_rates(df):
-    rates = pd.crosstab([df["obstacles"], df["controller"]], df["outcome"], normalize="index") * 100
-    return rates.reindex(columns=["success", "collision", "timeout"], fill_value=0.0)
+def test_turns_toward_the_clearer_side():
+    _, w_left = fuzzy_controller(left=3.0, front=0.4, right=1.0, bearing=0.0)
+    _, w_right = fuzzy_controller(left=1.0, front=0.4, right=3.0, bearing=0.0)
+    assert w_left > 0.5
+    assert w_right < -0.5
 
 
-def plot(df, rates):
-    fig, axes = plt.subplots(1, 3, figsize=(17, 5))
-
-    rates["success"].unstack("controller").plot.bar(ax=axes[0], rot=0)
-    axes[0].set_ylabel("success rate (%)")
-    axes[0].set_xlabel("number of obstacles in a 20 x 20 m world")
-    axes[0].set_title("Success rate (50 random worlds per density)")
-    axes[0].set_ylim(0, 105)
-    axes[0].grid(alpha=0.3, axis="y")
-
-    world = random_world(0, 12, start=START, goal=GOAL)
-    ax = axes[1]
-    for ox, oy, r in world.obstacles:
-        ax.add_patch(Circle((ox, oy), r, color="gray", alpha=0.6))
-    for name, ctrl in CONTROLLERS.items():
-        ep = simulate(world, ctrl, START, GOAL)
-        xs, ys = zip(*ep.trajectory)
-        ax.plot(xs, ys, label=f"{name}: {ep.outcome}", lw=2)
-    ax.scatter(*START, c="blue", s=80, zorder=5)
-    ax.scatter(*GOAL, c="green", s=80, zorder=5)
-    ax.set_xlim(0, world.size)
-    ax.set_ylim(0, world.size)
-    ax.set_aspect("equal")
-    ax.set_title("Example world (12 obstacles, seed 0)")
-    ax.legend(fontsize=8, loc="lower right")
-
-    ok = df[df["outcome"] == "success"]
-    smooth = ok.groupby(["obstacles", "controller"])["smoothness"].mean().unstack("controller")
-    smooth.plot.bar(ax=axes[2], rot=0)
-    axes[2].set_ylabel("mean |change in turn rate| per step (lower = smoother)")
-    axes[2].set_xlabel("number of obstacles")
-    axes[2].set_title("Steering smoothness (successful runs only)")
-    axes[2].grid(alpha=0.3, axis="y")
-
-    plt.tight_layout()
-    plt.savefig(f"{RESULTS}/fuzzy.png", dpi=150)
-    plt.close()
+def test_slows_down_near_obstacles():
+    v_free, _ = fuzzy_controller(3.0, 3.0, 3.0, 0.0)
+    v_near, _ = fuzzy_controller(3.0, 0.4, 3.0, 0.0)
+    assert v_free > 0.75
+    assert v_near < 0.35
 
 
-if __name__ == "__main__":
-    df = run()
-    rates = outcome_rates(df)
-    plot(df, rates)
+def test_steers_toward_goal_in_free_space():
+    _, w_ahead = fuzzy_controller(3.0, 3.0, 3.0, 0.0)
+    _, w_goal_left = fuzzy_controller(3.0, 3.0, 3.0, 1.0)
+    _, w_goal_right = fuzzy_controller(3.0, 3.0, 3.0, -1.0)
+    assert abs(w_ahead) < 0.05
+    assert w_goal_left > 0.3
+    assert w_goal_right < -0.3
 
-    print("Outcome rates (%):")
-    print(rates.round(1).to_string())
-    ok = df[df["outcome"] == "success"]
-    print("\nSuccessful runs only (means):")
-    print(ok.groupby(["obstacles", "controller"])[["path_length", "min_clearance", "smoothness"]]
-          .mean().round(3).to_string())
-    print("\nSaved results/fuzzy.csv and results/fuzzy.png")
+
+def test_ray_distance():
+    obstacles = [(5.0, 0.0, 1.0)]
+    # obstacle surface is 4 m away; use a longer range than the default 3 m sensor
+    assert abs(ray_distance(0.0, 0.0, 0.0, obstacles, max_range=10.0) - 4.0) < 1e-9
+    assert ray_distance(0.0, 0.0, 0.0, obstacles, max_range=3.0) == 3.0     # hit is beyond range
+    assert ray_distance(0.0, 0.0, 1.5707963, obstacles, max_range=10.0) == 10.0  # ray misses
+
+
+def test_both_controllers_reach_goal_in_empty_world():
+    world = World(20.0, [])
+    for ctrl in (fuzzy_controller, reactive_controller):
+        ep = simulate(world, ctrl, (1.0, 1.0), (10.0, 10.0))
+        assert ep.outcome == "success"

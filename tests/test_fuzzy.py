@@ -1,6 +1,5 @@
-from planner.fuzzy import fuzzy_controller, trap
+from planner.fuzzy import fuzzy_controller, reactive_controller, trap
 from planner.navigation import World, ray_distance, simulate
-from planner.fuzzy import reactive_controller
 
 
 def test_trapezoid_membership_values():
@@ -36,9 +35,10 @@ def test_steers_toward_goal_in_free_space():
 
 def test_ray_distance():
     obstacles = [(5.0, 0.0, 1.0)]
-    assert abs(ray_distance(0.0, 0.0, 0.0, obstacles) - 4.0) < 1e-9
-    assert ray_distance(0.0, 0.0, 1.5707963, obstacles) == 3.0   # misses: capped at max range
-    assert ray_distance(0.0, 0.0, 0.0, obstacles, max_range=3.0) == 3.0  # hit is beyond range
+    # obstacle surface is 4 m away; use a longer range than the default 3 m sensor
+    assert abs(ray_distance(0.0, 0.0, 0.0, obstacles, max_range=10.0) - 4.0) < 1e-9
+    assert ray_distance(0.0, 0.0, 0.0, obstacles, max_range=3.0) == 3.0     # hit is beyond range
+    assert ray_distance(0.0, 0.0, 1.5707963, obstacles, max_range=10.0) == 10.0  # ray misses
 
 
 def test_both_controllers_reach_goal_in_empty_world():
