@@ -1,14 +1,7 @@
 import heapq
 import time
 
-from .result import SearchResult
-
-
-def _reconstruct(parent, start, goal):
-    path = [goal]
-    while path[-1] != start:
-        path.append(parent[path[-1]])
-    return path[::-1]
+from .result import SearchResult, reconstruct_path
 
 
 def dijkstra(grid, start, goal):
@@ -28,7 +21,7 @@ def dijkstra(grid, start, goal):
 
         if cur == goal:
             ms = (time.perf_counter() - t0) * 1000
-            return SearchResult(_reconstruct(parent, start, goal), explored, ms)
+            return SearchResult(reconstruct_path(parent, start, goal), explored, ms)
 
         for nxt in grid.neighbors(cur):
             nd = d + 1

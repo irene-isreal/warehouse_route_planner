@@ -14,3 +14,10 @@ class SearchResult:
     @property
     def cost(self):
         return len(self.path) - 1 if self.path else None
+
+
+def reconstruct_path(parent, start, goal):
+    path = [goal]
+    while path[-1] != start:
+        path.append(parent[path[-1]])
+    return path[::-1]
