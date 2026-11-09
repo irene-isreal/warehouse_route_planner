@@ -58,8 +58,9 @@ def random_world(seed, n_obstacles, size=20.0, start=(1.5, 1.5), goal=(18.5, 18.
     return World(size, obstacles)
 
 
-def ray_distance(x, y, angle, obstacles, max_range=MAX_RANGE):
-    """Distance along a ray from (x, y) to the nearest circular obstacle, capped at max_range."""
+def ray_distance(x, y, angle, obstacles, max_range=MAX_RANGE, world_size=None):
+    """Distance along a ray from (x, y) to the nearest circular obstacle, capped at max_range.
+    If world_size is given, the four walls of the square arena [0, world_size]^2 also block the ray."""
     dx, dy = math.cos(angle), math.sin(angle)
     best = max_range
     for ox, oy, r in obstacles:
@@ -72,30 +73,37 @@ def ray_distance(x, y, angle, obstacles, max_range=MAX_RANGE):
         t = -b - math.sqrt(disc)
         if 0 <= t < best:
             best = t
+    if world_size is not None:
+        for d, p in ((dx, x), (dy, y)):
+            if abs(d) > 1e-12:
+                t = (world_size - p) / d if d > 0 else (0.0 - p) / d
+                if 0 <= t < best:
+                    best = t
     return best
 
 
-def read_sensors(obstacles, x, y, theta, suite="3-ray"):
+def read_sensors(obstacles, x, y, theta, suite="3-ray", world_size=None):
     """Return (left, front, right) readings for the chosen sensor suite."""
     angles = SENSOR_SUITES[suite]
     return tuple(
-        min(ray_distance(x, y, theta + a, obstacles) for a in angles[key])
+        min(ray_distance(x, y, theta + a, obstacles, world_size=world_size) for a in angles[key])
         for key in ("left", "front", "right")
     )
 
 
-def simulate(world, controller, start, goal, max_steps=600, sensors="3-ray", log=None):
-    """Run one episode. If `log` is a list, one dict per step is appended to it:
-    the state the controller saw (x, y, readings, bearing) and the commands it produced (v, w)."""
+def simulate(world, controller, start, goal, max_steps=600, sensors="3-ray", log=None, walls=False):
+    """Run one episode. If `log` is a list, one dict per step is appended to it.
+    If walls is True, the arena walls are visible to the range sensors."""
     x, y = start
     theta = math.atan2(goal[1] - y, goal[0] - x)
     path_length, min_clear = 0.0, float("inf")
     prev_w, dw_sum = 0.0, 0.0
     trajectory = [(x, y)]
     outcome, step = "timeout", 0
+    wall_size = world.size if walls else None
 
     for step in range(1, max_steps + 1):
-        left, front, right = read_sensors(world.obstacles, x, y, theta, sensors)
+        left, front, right = read_sensors(world.obstacles, x, y, theta, sensors, wall_size)
 
         bearing = math.atan2(goal[1] - y, goal[0] - x) - theta
         bearing = math.atan2(math.sin(bearing), math.cos(bearing))  # wrap to [-pi, pi]
