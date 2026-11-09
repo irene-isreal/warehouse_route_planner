@@ -137,3 +137,4 @@ def simulate(world, controller, start, goal, max_steps=600, sensors="3-ray", log
             break
 
     return Episode(outcome, step, path_length, min_clear, dw_sum / max(step, 1), trajectory)
+ 

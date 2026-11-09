@@ -1,0 +1,1801 @@
+obstacles,seed,controller,outcome
+6,1000,Fuzzy v1,success
+6,1000,Fuzzy v2a (final),success
+6,1000,Reactive,success
+6,1001,Fuzzy v1,success
+6,1001,Fuzzy v2a (final),success
+6,1001,Reactive,success
+6,1002,Fuzzy v1,success
+6,1002,Fuzzy v2a (final),success
+6,1002,Reactive,success
+6,1003,Fuzzy v1,success
+6,1003,Fuzzy v2a (final),success
+6,1003,Reactive,success
+6,1004,Fuzzy v1,success
+6,1004,Fuzzy v2a (final),timeout
+6,1004,Reactive,success
+6,1005,Fuzzy v1,success
+6,1005,Fuzzy v2a (final),success
+6,1005,Reactive,success
+6,1006,Fuzzy v1,success
+6,1006,Fuzzy v2a (final),success
+6,1006,Reactive,success
+6,1007,Fuzzy v1,success
+6,1007,Fuzzy v2a (final),timeout
+6,1007,Reactive,success
+6,1008,Fuzzy v1,success
+6,1008,Fuzzy v2a (final),success
+6,1008,Reactive,success
+6,1009,Fuzzy v1,success
+6,1009,Fuzzy v2a (final),success
+6,1009,Reactive,success
+6,1010,Fuzzy v1,success
+6,1010,Fuzzy v2a (final),success
+6,1010,Reactive,success
+6,1011,Fuzzy v1,success
+6,1011,Fuzzy v2a (final),success
+6,1011,Reactive,success
+6,1012,Fuzzy v1,success
+6,1012,Fuzzy v2a (final),success
+6,1012,Reactive,success
+6,1013,Fuzzy v1,success
+6,1013,Fuzzy v2a (final),success
+6,1013,Reactive,success
+6,1014,Fuzzy v1,collision
+6,1014,Fuzzy v2a (final),timeout
+6,1014,Reactive,success
+6,1015,Fuzzy v1,success
+6,1015,Fuzzy v2a (final),success
+6,1015,Reactive,success
+6,1016,Fuzzy v1,collision
+6,1016,Fuzzy v2a (final),success
+6,1016,Reactive,success
+6,1017,Fuzzy v1,success
+6,1017,Fuzzy v2a (final),success
+6,1017,Reactive,success
+6,1018,Fuzzy v1,success
+6,1018,Fuzzy v2a (final),success
+6,1018,Reactive,success
+6,1019,Fuzzy v1,success
+6,1019,Fuzzy v2a (final),success
+6,1019,Reactive,success
+6,1020,Fuzzy v1,success
+6,1020,Fuzzy v2a (final),success
+6,1020,Reactive,success
+6,1021,Fuzzy v1,success
+6,1021,Fuzzy v2a (final),success
+6,1021,Reactive,success
+6,1022,Fuzzy v1,success
+6,1022,Fuzzy v2a (final),success
+6,1022,Reactive,success
+6,1023,Fuzzy v1,success
+6,1023,Fuzzy v2a (final),success
+6,1023,Reactive,success
+6,1024,Fuzzy v1,success
+6,1024,Fuzzy v2a (final),timeout
+6,1024,Reactive,success
+6,1025,Fuzzy v1,success
+6,1025,Fuzzy v2a (final),success
+6,1025,Reactive,success
+6,1026,Fuzzy v1,success
+6,1026,Fuzzy v2a (final),success
+6,1026,Reactive,success
+6,1027,Fuzzy v1,success
+6,1027,Fuzzy v2a (final),success
+6,1027,Reactive,success
+6,1028,Fuzzy v1,success
+6,1028,Fuzzy v2a (final),success
+6,1028,Reactive,success
+6,1029,Fuzzy v1,timeout
+6,1029,Fuzzy v2a (final),timeout
+6,1029,Reactive,success
+6,1030,Fuzzy v1,success
+6,1030,Fuzzy v2a (final),success
+6,1030,Reactive,success
+6,1031,Fuzzy v1,collision
+6,1031,Fuzzy v2a (final),success
+6,1031,Reactive,success
+6,1032,Fuzzy v1,success
+6,1032,Fuzzy v2a (final),success
+6,1032,Reactive,success
+6,1033,Fuzzy v1,success
+6,1033,Fuzzy v2a (final),success
+6,1033,Reactive,success
+6,1034,Fuzzy v1,success
+6,1034,Fuzzy v2a (final),success
+6,1034,Reactive,success
+6,1035,Fuzzy v1,success
+6,1035,Fuzzy v2a (final),success
+6,1035,Reactive,success
+6,1036,Fuzzy v1,success
+6,1036,Fuzzy v2a (final),success
+6,1036,Reactive,success
+6,1037,Fuzzy v1,success
+6,1037,Fuzzy v2a (final),success
+6,1037,Reactive,success
+6,1038,Fuzzy v1,success
+6,1038,Fuzzy v2a (final),success
+6,1038,Reactive,success
+6,1039,Fuzzy v1,success
+6,1039,Fuzzy v2a (final),success
+6,1039,Reactive,success
+6,1040,Fuzzy v1,success
+6,1040,Fuzzy v2a (final),timeout
+6,1040,Reactive,success
+6,1041,Fuzzy v1,success
+6,1041,Fuzzy v2a (final),success
+6,1041,Reactive,success
+6,1042,Fuzzy v1,success
+6,1042,Fuzzy v2a (final),timeout
+6,1042,Reactive,success
+6,1043,Fuzzy v1,success
+6,1043,Fuzzy v2a (final),success
+6,1043,Reactive,success
+6,1044,Fuzzy v1,success
+6,1044,Fuzzy v2a (final),success
+6,1044,Reactive,success
+6,1045,Fuzzy v1,success
+6,1045,Fuzzy v2a (final),success
+6,1045,Reactive,success
+6,1046,Fuzzy v1,success
+6,1046,Fuzzy v2a (final),timeout
+6,1046,Reactive,success
+6,1047,Fuzzy v1,success
+6,1047,Fuzzy v2a (final),success
+6,1047,Reactive,success
+6,1048,Fuzzy v1,success
+6,1048,Fuzzy v2a (final),success
+6,1048,Reactive,success
+6,1049,Fuzzy v1,collision
+6,1049,Fuzzy v2a (final),success
+6,1049,Reactive,success
+6,1050,Fuzzy v1,success
+6,1050,Fuzzy v2a (final),success
+6,1050,Reactive,success
+6,1051,Fuzzy v1,success
+6,1051,Fuzzy v2a (final),success
+6,1051,Reactive,success
+6,1052,Fuzzy v1,success
+6,1052,Fuzzy v2a (final),success
+6,1052,Reactive,success
+6,1053,Fuzzy v1,success
+6,1053,Fuzzy v2a (final),success
+6,1053,Reactive,success
+6,1054,Fuzzy v1,success
+6,1054,Fuzzy v2a (final),timeout
+6,1054,Reactive,success
+6,1055,Fuzzy v1,success
+6,1055,Fuzzy v2a (final),success
+6,1055,Reactive,success
+6,1056,Fuzzy v1,success
+6,1056,Fuzzy v2a (final),success
+6,1056,Reactive,success
+6,1057,Fuzzy v1,success
+6,1057,Fuzzy v2a (final),success
+6,1057,Reactive,success
+6,1058,Fuzzy v1,success
+6,1058,Fuzzy v2a (final),success
+6,1058,Reactive,success
+6,1059,Fuzzy v1,collision
+6,1059,Fuzzy v2a (final),collision
+6,1059,Reactive,success
+6,1060,Fuzzy v1,success
+6,1060,Fuzzy v2a (final),success
+6,1060,Reactive,success
+6,1061,Fuzzy v1,success
+6,1061,Fuzzy v2a (final),collision
+6,1061,Reactive,success
+6,1062,Fuzzy v1,success
+6,1062,Fuzzy v2a (final),success
+6,1062,Reactive,success
+6,1063,Fuzzy v1,success
+6,1063,Fuzzy v2a (final),timeout
+6,1063,Reactive,success
+6,1064,Fuzzy v1,success
+6,1064,Fuzzy v2a (final),success
+6,1064,Reactive,success
+6,1065,Fuzzy v1,success
+6,1065,Fuzzy v2a (final),success
+6,1065,Reactive,success
+6,1066,Fuzzy v1,collision
+6,1066,Fuzzy v2a (final),success
+6,1066,Reactive,success
+6,1067,Fuzzy v1,success
+6,1067,Fuzzy v2a (final),success
+6,1067,Reactive,success
+6,1068,Fuzzy v1,success
+6,1068,Fuzzy v2a (final),success
+6,1068,Reactive,success
+6,1069,Fuzzy v1,success
+6,1069,Fuzzy v2a (final),success
+6,1069,Reactive,success
+6,1070,Fuzzy v1,success
+6,1070,Fuzzy v2a (final),success
+6,1070,Reactive,success
+6,1071,Fuzzy v1,success
+6,1071,Fuzzy v2a (final),success
+6,1071,Reactive,success
+6,1072,Fuzzy v1,success
+6,1072,Fuzzy v2a (final),success
+6,1072,Reactive,success
+6,1073,Fuzzy v1,success
+6,1073,Fuzzy v2a (final),success
+6,1073,Reactive,success
+6,1074,Fuzzy v1,success
+6,1074,Fuzzy v2a (final),success
+6,1074,Reactive,success
+6,1075,Fuzzy v1,success
+6,1075,Fuzzy v2a (final),success
+6,1075,Reactive,success
+6,1076,Fuzzy v1,success
+6,1076,Fuzzy v2a (final),success
+6,1076,Reactive,success
+6,1077,Fuzzy v1,success
+6,1077,Fuzzy v2a (final),success
+6,1077,Reactive,success
+6,1078,Fuzzy v1,success
+6,1078,Fuzzy v2a (final),success
+6,1078,Reactive,success
+6,1079,Fuzzy v1,success
+6,1079,Fuzzy v2a (final),success
+6,1079,Reactive,success
+6,1080,Fuzzy v1,collision
+6,1080,Fuzzy v2a (final),timeout
+6,1080,Reactive,success
+6,1081,Fuzzy v1,success
+6,1081,Fuzzy v2a (final),success
+6,1081,Reactive,success
+6,1082,Fuzzy v1,success
+6,1082,Fuzzy v2a (final),success
+6,1082,Reactive,success
+6,1083,Fuzzy v1,success
+6,1083,Fuzzy v2a (final),success
+6,1083,Reactive,success
+6,1084,Fuzzy v1,success
+6,1084,Fuzzy v2a (final),success
+6,1084,Reactive,success
+6,1085,Fuzzy v1,collision
+6,1085,Fuzzy v2a (final),success
+6,1085,Reactive,success
+6,1086,Fuzzy v1,success
+6,1086,Fuzzy v2a (final),success
+6,1086,Reactive,success
+6,1087,Fuzzy v1,success
+6,1087,Fuzzy v2a (final),success
+6,1087,Reactive,success
+6,1088,Fuzzy v1,success
+6,1088,Fuzzy v2a (final),success
+6,1088,Reactive,success
+6,1089,Fuzzy v1,success
+6,1089,Fuzzy v2a (final),success
+6,1089,Reactive,success
+6,1090,Fuzzy v1,success
+6,1090,Fuzzy v2a (final),success
+6,1090,Reactive,success
+6,1091,Fuzzy v1,success
+6,1091,Fuzzy v2a (final),collision
+6,1091,Reactive,success
+6,1092,Fuzzy v1,success
+6,1092,Fuzzy v2a (final),success
+6,1092,Reactive,success
+6,1093,Fuzzy v1,success
+6,1093,Fuzzy v2a (final),success
+6,1093,Reactive,success
+6,1094,Fuzzy v1,success
+6,1094,Fuzzy v2a (final),success
+6,1094,Reactive,success
+6,1095,Fuzzy v1,success
+6,1095,Fuzzy v2a (final),success
+6,1095,Reactive,success
+6,1096,Fuzzy v1,success
+6,1096,Fuzzy v2a (final),success
+6,1096,Reactive,success
+6,1097,Fuzzy v1,success
+6,1097,Fuzzy v2a (final),success
+6,1097,Reactive,success
+6,1098,Fuzzy v1,success
+6,1098,Fuzzy v2a (final),success
+6,1098,Reactive,success
+6,1099,Fuzzy v1,success
+6,1099,Fuzzy v2a (final),success
+6,1099,Reactive,success
+6,1100,Fuzzy v1,success
+6,1100,Fuzzy v2a (final),success
+6,1100,Reactive,success
+6,1101,Fuzzy v1,success
+6,1101,Fuzzy v2a (final),success
+6,1101,Reactive,success
+6,1102,Fuzzy v1,success
+6,1102,Fuzzy v2a (final),success
+6,1102,Reactive,success
+6,1103,Fuzzy v1,success
+6,1103,Fuzzy v2a (final),success
+6,1103,Reactive,success
+6,1104,Fuzzy v1,collision
+6,1104,Fuzzy v2a (final),success
+6,1104,Reactive,success
+6,1105,Fuzzy v1,collision
+6,1105,Fuzzy v2a (final),collision
+6,1105,Reactive,success
+6,1106,Fuzzy v1,success
+6,1106,Fuzzy v2a (final),success
+6,1106,Reactive,success
+6,1107,Fuzzy v1,success
+6,1107,Fuzzy v2a (final),success
+6,1107,Reactive,success
+6,1108,Fuzzy v1,success
+6,1108,Fuzzy v2a (final),success
+6,1108,Reactive,success
+6,1109,Fuzzy v1,success
+6,1109,Fuzzy v2a (final),success
+6,1109,Reactive,success
+6,1110,Fuzzy v1,success
+6,1110,Fuzzy v2a (final),success
+6,1110,Reactive,success
+6,1111,Fuzzy v1,success
+6,1111,Fuzzy v2a (final),success
+6,1111,Reactive,success
+6,1112,Fuzzy v1,success
+6,1112,Fuzzy v2a (final),success
+6,1112,Reactive,success
+6,1113,Fuzzy v1,success
+6,1113,Fuzzy v2a (final),success
+6,1113,Reactive,success
+6,1114,Fuzzy v1,success
+6,1114,Fuzzy v2a (final),success
+6,1114,Reactive,success
+6,1115,Fuzzy v1,collision
+6,1115,Fuzzy v2a (final),success
+6,1115,Reactive,success
+6,1116,Fuzzy v1,success
+6,1116,Fuzzy v2a (final),success
+6,1116,Reactive,success
+6,1117,Fuzzy v1,success
+6,1117,Fuzzy v2a (final),success
+6,1117,Reactive,success
+6,1118,Fuzzy v1,success
+6,1118,Fuzzy v2a (final),success
+6,1118,Reactive,success
+6,1119,Fuzzy v1,success
+6,1119,Fuzzy v2a (final),success
+6,1119,Reactive,success
+6,1120,Fuzzy v1,success
+6,1120,Fuzzy v2a (final),success
+6,1120,Reactive,success
+6,1121,Fuzzy v1,success
+6,1121,Fuzzy v2a (final),success
+6,1121,Reactive,success
+6,1122,Fuzzy v1,success
+6,1122,Fuzzy v2a (final),success
+6,1122,Reactive,success
+6,1123,Fuzzy v1,success
+6,1123,Fuzzy v2a (final),success
+6,1123,Reactive,success
+6,1124,Fuzzy v1,success
+6,1124,Fuzzy v2a (final),success
+6,1124,Reactive,success
+6,1125,Fuzzy v1,success
+6,1125,Fuzzy v2a (final),success
+6,1125,Reactive,success
+6,1126,Fuzzy v1,collision
+6,1126,Fuzzy v2a (final),success
+6,1126,Reactive,success
+6,1127,Fuzzy v1,success
+6,1127,Fuzzy v2a (final),success
+6,1127,Reactive,success
+6,1128,Fuzzy v1,success
+6,1128,Fuzzy v2a (final),success
+6,1128,Reactive,success
+6,1129,Fuzzy v1,success
+6,1129,Fuzzy v2a (final),success
+6,1129,Reactive,success
+6,1130,Fuzzy v1,success
+6,1130,Fuzzy v2a (final),success
+6,1130,Reactive,success
+6,1131,Fuzzy v1,success
+6,1131,Fuzzy v2a (final),success
+6,1131,Reactive,success
+6,1132,Fuzzy v1,success
+6,1132,Fuzzy v2a (final),success
+6,1132,Reactive,success
+6,1133,Fuzzy v1,success
+6,1133,Fuzzy v2a (final),success
+6,1133,Reactive,success
+6,1134,Fuzzy v1,success
+6,1134,Fuzzy v2a (final),success
+6,1134,Reactive,success
+6,1135,Fuzzy v1,success
+6,1135,Fuzzy v2a (final),success
+6,1135,Reactive,success
+6,1136,Fuzzy v1,collision
+6,1136,Fuzzy v2a (final),success
+6,1136,Reactive,success
+6,1137,Fuzzy v1,success
+6,1137,Fuzzy v2a (final),success
+6,1137,Reactive,success
+6,1138,Fuzzy v1,success
+6,1138,Fuzzy v2a (final),success
+6,1138,Reactive,success
+6,1139,Fuzzy v1,success
+6,1139,Fuzzy v2a (final),success
+6,1139,Reactive,success
+6,1140,Fuzzy v1,success
+6,1140,Fuzzy v2a (final),success
+6,1140,Reactive,success
+6,1141,Fuzzy v1,success
+6,1141,Fuzzy v2a (final),success
+6,1141,Reactive,success
+6,1142,Fuzzy v1,success
+6,1142,Fuzzy v2a (final),success
+6,1142,Reactive,success
+6,1143,Fuzzy v1,success
+6,1143,Fuzzy v2a (final),success
+6,1143,Reactive,success
+6,1144,Fuzzy v1,success
+6,1144,Fuzzy v2a (final),success
+6,1144,Reactive,success
+6,1145,Fuzzy v1,success
+6,1145,Fuzzy v2a (final),success
+6,1145,Reactive,success
+6,1146,Fuzzy v1,success
+6,1146,Fuzzy v2a (final),collision
+6,1146,Reactive,success
+6,1147,Fuzzy v1,success
+6,1147,Fuzzy v2a (final),success
+6,1147,Reactive,success
+6,1148,Fuzzy v1,success
+6,1148,Fuzzy v2a (final),success
+6,1148,Reactive,success
+6,1149,Fuzzy v1,success
+6,1149,Fuzzy v2a (final),success
+6,1149,Reactive,success
+6,1150,Fuzzy v1,success
+6,1150,Fuzzy v2a (final),success
+6,1150,Reactive,success
+6,1151,Fuzzy v1,success
+6,1151,Fuzzy v2a (final),success
+6,1151,Reactive,success
+6,1152,Fuzzy v1,success
+6,1152,Fuzzy v2a (final),success
+6,1152,Reactive,success
+6,1153,Fuzzy v1,success
+6,1153,Fuzzy v2a (final),success
+6,1153,Reactive,success
+6,1154,Fuzzy v1,success
+6,1154,Fuzzy v2a (final),success
+6,1154,Reactive,success
+6,1155,Fuzzy v1,success
+6,1155,Fuzzy v2a (final),success
+6,1155,Reactive,success
+6,1156,Fuzzy v1,success
+6,1156,Fuzzy v2a (final),collision
+6,1156,Reactive,success
+6,1157,Fuzzy v1,success
+6,1157,Fuzzy v2a (final),success
+6,1157,Reactive,success
+6,1158,Fuzzy v1,success
+6,1158,Fuzzy v2a (final),success
+6,1158,Reactive,success
+6,1159,Fuzzy v1,collision
+6,1159,Fuzzy v2a (final),success
+6,1159,Reactive,success
+6,1160,Fuzzy v1,success
+6,1160,Fuzzy v2a (final),success
+6,1160,Reactive,success
+6,1161,Fuzzy v1,success
+6,1161,Fuzzy v2a (final),success
+6,1161,Reactive,success
+6,1162,Fuzzy v1,success
+6,1162,Fuzzy v2a (final),success
+6,1162,Reactive,success
+6,1163,Fuzzy v1,success
+6,1163,Fuzzy v2a (final),success
+6,1163,Reactive,success
+6,1164,Fuzzy v1,success
+6,1164,Fuzzy v2a (final),success
+6,1164,Reactive,success
+6,1165,Fuzzy v1,success
+6,1165,Fuzzy v2a (final),timeout
+6,1165,Reactive,success
+6,1166,Fuzzy v1,success
+6,1166,Fuzzy v2a (final),success
+6,1166,Reactive,success
+6,1167,Fuzzy v1,success
+6,1167,Fuzzy v2a (final),success
+6,1167,Reactive,success
+6,1168,Fuzzy v1,success
+6,1168,Fuzzy v2a (final),success
+6,1168,Reactive,success
+6,1169,Fuzzy v1,collision
+6,1169,Fuzzy v2a (final),success
+6,1169,Reactive,success
+6,1170,Fuzzy v1,collision
+6,1170,Fuzzy v2a (final),success
+6,1170,Reactive,success
+6,1171,Fuzzy v1,success
+6,1171,Fuzzy v2a (final),success
+6,1171,Reactive,success
+6,1172,Fuzzy v1,success
+6,1172,Fuzzy v2a (final),success
+6,1172,Reactive,success
+6,1173,Fuzzy v1,success
+6,1173,Fuzzy v2a (final),success
+6,1173,Reactive,success
+6,1174,Fuzzy v1,success
+6,1174,Fuzzy v2a (final),success
+6,1174,Reactive,success
+6,1175,Fuzzy v1,success
+6,1175,Fuzzy v2a (final),success
+6,1175,Reactive,success
+6,1176,Fuzzy v1,success
+6,1176,Fuzzy v2a (final),success
+6,1176,Reactive,success
+6,1177,Fuzzy v1,collision
+6,1177,Fuzzy v2a (final),success
+6,1177,Reactive,success
+6,1178,Fuzzy v1,success
+6,1178,Fuzzy v2a (final),success
+6,1178,Reactive,success
+6,1179,Fuzzy v1,success
+6,1179,Fuzzy v2a (final),success
+6,1179,Reactive,success
+6,1180,Fuzzy v1,success
+6,1180,Fuzzy v2a (final),success
+6,1180,Reactive,success
+6,1181,Fuzzy v1,success
+6,1181,Fuzzy v2a (final),success
+6,1181,Reactive,success
+6,1182,Fuzzy v1,success
+6,1182,Fuzzy v2a (final),success
+6,1182,Reactive,success
+6,1183,Fuzzy v1,success
+6,1183,Fuzzy v2a (final),collision
+6,1183,Reactive,success
+6,1184,Fuzzy v1,success
+6,1184,Fuzzy v2a (final),success
+6,1184,Reactive,success
+6,1185,Fuzzy v1,success
+6,1185,Fuzzy v2a (final),success
+6,1185,Reactive,success
+6,1186,Fuzzy v1,collision
+6,1186,Fuzzy v2a (final),collision
+6,1186,Reactive,success
+6,1187,Fuzzy v1,success
+6,1187,Fuzzy v2a (final),success
+6,1187,Reactive,success
+6,1188,Fuzzy v1,success
+6,1188,Fuzzy v2a (final),success
+6,1188,Reactive,success
+6,1189,Fuzzy v1,success
+6,1189,Fuzzy v2a (final),success
+6,1189,Reactive,success
+6,1190,Fuzzy v1,success
+6,1190,Fuzzy v2a (final),success
+6,1190,Reactive,success
+6,1191,Fuzzy v1,success
+6,1191,Fuzzy v2a (final),success
+6,1191,Reactive,success
+6,1192,Fuzzy v1,success
+6,1192,Fuzzy v2a (final),success
+6,1192,Reactive,success
+6,1193,Fuzzy v1,success
+6,1193,Fuzzy v2a (final),success
+6,1193,Reactive,success
+6,1194,Fuzzy v1,success
+6,1194,Fuzzy v2a (final),success
+6,1194,Reactive,success
+6,1195,Fuzzy v1,success
+6,1195,Fuzzy v2a (final),success
+6,1195,Reactive,success
+6,1196,Fuzzy v1,success
+6,1196,Fuzzy v2a (final),success
+6,1196,Reactive,success
+6,1197,Fuzzy v1,collision
+6,1197,Fuzzy v2a (final),success
+6,1197,Reactive,success
+6,1198,Fuzzy v1,success
+6,1198,Fuzzy v2a (final),success
+6,1198,Reactive,success
+6,1199,Fuzzy v1,success
+6,1199,Fuzzy v2a (final),success
+6,1199,Reactive,success
+12,1000,Fuzzy v1,success
+12,1000,Fuzzy v2a (final),success
+12,1000,Reactive,success
+12,1001,Fuzzy v1,success
+12,1001,Fuzzy v2a (final),success
+12,1001,Reactive,success
+12,1002,Fuzzy v1,success
+12,1002,Fuzzy v2a (final),success
+12,1002,Reactive,success
+12,1003,Fuzzy v1,success
+12,1003,Fuzzy v2a (final),success
+12,1003,Reactive,success
+12,1004,Fuzzy v1,collision
+12,1004,Fuzzy v2a (final),timeout
+12,1004,Reactive,success
+12,1005,Fuzzy v1,collision
+12,1005,Fuzzy v2a (final),success
+12,1005,Reactive,success
+12,1006,Fuzzy v1,success
+12,1006,Fuzzy v2a (final),success
+12,1006,Reactive,success
+12,1007,Fuzzy v1,success
+12,1007,Fuzzy v2a (final),timeout
+12,1007,Reactive,success
+12,1008,Fuzzy v1,success
+12,1008,Fuzzy v2a (final),success
+12,1008,Reactive,success
+12,1009,Fuzzy v1,success
+12,1009,Fuzzy v2a (final),success
+12,1009,Reactive,success
+12,1010,Fuzzy v1,success
+12,1010,Fuzzy v2a (final),success
+12,1010,Reactive,success
+12,1011,Fuzzy v1,collision
+12,1011,Fuzzy v2a (final),success
+12,1011,Reactive,success
+12,1012,Fuzzy v1,success
+12,1012,Fuzzy v2a (final),success
+12,1012,Reactive,success
+12,1013,Fuzzy v1,collision
+12,1013,Fuzzy v2a (final),success
+12,1013,Reactive,success
+12,1014,Fuzzy v1,collision
+12,1014,Fuzzy v2a (final),success
+12,1014,Reactive,success
+12,1015,Fuzzy v1,success
+12,1015,Fuzzy v2a (final),success
+12,1015,Reactive,success
+12,1016,Fuzzy v1,success
+12,1016,Fuzzy v2a (final),success
+12,1016,Reactive,success
+12,1017,Fuzzy v1,success
+12,1017,Fuzzy v2a (final),success
+12,1017,Reactive,success
+12,1018,Fuzzy v1,success
+12,1018,Fuzzy v2a (final),success
+12,1018,Reactive,success
+12,1019,Fuzzy v1,success
+12,1019,Fuzzy v2a (final),success
+12,1019,Reactive,success
+12,1020,Fuzzy v1,success
+12,1020,Fuzzy v2a (final),success
+12,1020,Reactive,success
+12,1021,Fuzzy v1,collision
+12,1021,Fuzzy v2a (final),collision
+12,1021,Reactive,success
+12,1022,Fuzzy v1,success
+12,1022,Fuzzy v2a (final),success
+12,1022,Reactive,success
+12,1023,Fuzzy v1,success
+12,1023,Fuzzy v2a (final),success
+12,1023,Reactive,success
+12,1024,Fuzzy v1,success
+12,1024,Fuzzy v2a (final),success
+12,1024,Reactive,success
+12,1025,Fuzzy v1,success
+12,1025,Fuzzy v2a (final),success
+12,1025,Reactive,success
+12,1026,Fuzzy v1,success
+12,1026,Fuzzy v2a (final),success
+12,1026,Reactive,success
+12,1027,Fuzzy v1,collision
+12,1027,Fuzzy v2a (final),success
+12,1027,Reactive,success
+12,1028,Fuzzy v1,success
+12,1028,Fuzzy v2a (final),success
+12,1028,Reactive,success
+12,1029,Fuzzy v1,timeout
+12,1029,Fuzzy v2a (final),timeout
+12,1029,Reactive,success
+12,1030,Fuzzy v1,success
+12,1030,Fuzzy v2a (final),success
+12,1030,Reactive,success
+12,1031,Fuzzy v1,success
+12,1031,Fuzzy v2a (final),success
+12,1031,Reactive,success
+12,1032,Fuzzy v1,collision
+12,1032,Fuzzy v2a (final),success
+12,1032,Reactive,success
+12,1033,Fuzzy v1,success
+12,1033,Fuzzy v2a (final),success
+12,1033,Reactive,success
+12,1034,Fuzzy v1,success
+12,1034,Fuzzy v2a (final),success
+12,1034,Reactive,success
+12,1035,Fuzzy v1,success
+12,1035,Fuzzy v2a (final),success
+12,1035,Reactive,success
+12,1036,Fuzzy v1,success
+12,1036,Fuzzy v2a (final),success
+12,1036,Reactive,success
+12,1037,Fuzzy v1,success
+12,1037,Fuzzy v2a (final),success
+12,1037,Reactive,success
+12,1038,Fuzzy v1,success
+12,1038,Fuzzy v2a (final),success
+12,1038,Reactive,success
+12,1039,Fuzzy v1,success
+12,1039,Fuzzy v2a (final),success
+12,1039,Reactive,success
+12,1040,Fuzzy v1,success
+12,1040,Fuzzy v2a (final),success
+12,1040,Reactive,success
+12,1041,Fuzzy v1,collision
+12,1041,Fuzzy v2a (final),timeout
+12,1041,Reactive,success
+12,1042,Fuzzy v1,success
+12,1042,Fuzzy v2a (final),timeout
+12,1042,Reactive,success
+12,1043,Fuzzy v1,success
+12,1043,Fuzzy v2a (final),success
+12,1043,Reactive,success
+12,1044,Fuzzy v1,success
+12,1044,Fuzzy v2a (final),success
+12,1044,Reactive,success
+12,1045,Fuzzy v1,collision
+12,1045,Fuzzy v2a (final),success
+12,1045,Reactive,success
+12,1046,Fuzzy v1,success
+12,1046,Fuzzy v2a (final),timeout
+12,1046,Reactive,success
+12,1047,Fuzzy v1,success
+12,1047,Fuzzy v2a (final),success
+12,1047,Reactive,success
+12,1048,Fuzzy v1,success
+12,1048,Fuzzy v2a (final),timeout
+12,1048,Reactive,success
+12,1049,Fuzzy v1,collision
+12,1049,Fuzzy v2a (final),timeout
+12,1049,Reactive,success
+12,1050,Fuzzy v1,success
+12,1050,Fuzzy v2a (final),success
+12,1050,Reactive,success
+12,1051,Fuzzy v1,success
+12,1051,Fuzzy v2a (final),success
+12,1051,Reactive,success
+12,1052,Fuzzy v1,collision
+12,1052,Fuzzy v2a (final),success
+12,1052,Reactive,success
+12,1053,Fuzzy v1,success
+12,1053,Fuzzy v2a (final),success
+12,1053,Reactive,success
+12,1054,Fuzzy v1,success
+12,1054,Fuzzy v2a (final),timeout
+12,1054,Reactive,success
+12,1055,Fuzzy v1,success
+12,1055,Fuzzy v2a (final),success
+12,1055,Reactive,success
+12,1056,Fuzzy v1,success
+12,1056,Fuzzy v2a (final),success
+12,1056,Reactive,success
+12,1057,Fuzzy v1,success
+12,1057,Fuzzy v2a (final),timeout
+12,1057,Reactive,success
+12,1058,Fuzzy v1,collision
+12,1058,Fuzzy v2a (final),collision
+12,1058,Reactive,success
+12,1059,Fuzzy v1,success
+12,1059,Fuzzy v2a (final),success
+12,1059,Reactive,collision
+12,1060,Fuzzy v1,success
+12,1060,Fuzzy v2a (final),success
+12,1060,Reactive,success
+12,1061,Fuzzy v1,success
+12,1061,Fuzzy v2a (final),success
+12,1061,Reactive,success
+12,1062,Fuzzy v1,success
+12,1062,Fuzzy v2a (final),success
+12,1062,Reactive,success
+12,1063,Fuzzy v1,timeout
+12,1063,Fuzzy v2a (final),timeout
+12,1063,Reactive,success
+12,1064,Fuzzy v1,success
+12,1064,Fuzzy v2a (final),success
+12,1064,Reactive,success
+12,1065,Fuzzy v1,success
+12,1065,Fuzzy v2a (final),success
+12,1065,Reactive,success
+12,1066,Fuzzy v1,collision
+12,1066,Fuzzy v2a (final),collision
+12,1066,Reactive,success
+12,1067,Fuzzy v1,success
+12,1067,Fuzzy v2a (final),success
+12,1067,Reactive,success
+12,1068,Fuzzy v1,success
+12,1068,Fuzzy v2a (final),success
+12,1068,Reactive,success
+12,1069,Fuzzy v1,success
+12,1069,Fuzzy v2a (final),success
+12,1069,Reactive,success
+12,1070,Fuzzy v1,success
+12,1070,Fuzzy v2a (final),collision
+12,1070,Reactive,success
+12,1071,Fuzzy v1,success
+12,1071,Fuzzy v2a (final),success
+12,1071,Reactive,success
+12,1072,Fuzzy v1,success
+12,1072,Fuzzy v2a (final),success
+12,1072,Reactive,success
+12,1073,Fuzzy v1,success
+12,1073,Fuzzy v2a (final),success
+12,1073,Reactive,success
+12,1074,Fuzzy v1,success
+12,1074,Fuzzy v2a (final),success
+12,1074,Reactive,success
+12,1075,Fuzzy v1,success
+12,1075,Fuzzy v2a (final),success
+12,1075,Reactive,success
+12,1076,Fuzzy v1,success
+12,1076,Fuzzy v2a (final),success
+12,1076,Reactive,success
+12,1077,Fuzzy v1,success
+12,1077,Fuzzy v2a (final),success
+12,1077,Reactive,success
+12,1078,Fuzzy v1,success
+12,1078,Fuzzy v2a (final),success
+12,1078,Reactive,success
+12,1079,Fuzzy v1,success
+12,1079,Fuzzy v2a (final),success
+12,1079,Reactive,success
+12,1080,Fuzzy v1,collision
+12,1080,Fuzzy v2a (final),timeout
+12,1080,Reactive,success
+12,1081,Fuzzy v1,success
+12,1081,Fuzzy v2a (final),success
+12,1081,Reactive,success
+12,1082,Fuzzy v1,success
+12,1082,Fuzzy v2a (final),success
+12,1082,Reactive,success
+12,1083,Fuzzy v1,success
+12,1083,Fuzzy v2a (final),timeout
+12,1083,Reactive,success
+12,1084,Fuzzy v1,success
+12,1084,Fuzzy v2a (final),success
+12,1084,Reactive,success
+12,1085,Fuzzy v1,collision
+12,1085,Fuzzy v2a (final),success
+12,1085,Reactive,success
+12,1086,Fuzzy v1,success
+12,1086,Fuzzy v2a (final),success
+12,1086,Reactive,success
+12,1087,Fuzzy v1,success
+12,1087,Fuzzy v2a (final),success
+12,1087,Reactive,success
+12,1088,Fuzzy v1,success
+12,1088,Fuzzy v2a (final),success
+12,1088,Reactive,success
+12,1089,Fuzzy v1,success
+12,1089,Fuzzy v2a (final),success
+12,1089,Reactive,success
+12,1090,Fuzzy v1,success
+12,1090,Fuzzy v2a (final),success
+12,1090,Reactive,success
+12,1091,Fuzzy v1,success
+12,1091,Fuzzy v2a (final),success
+12,1091,Reactive,success
+12,1092,Fuzzy v1,success
+12,1092,Fuzzy v2a (final),success
+12,1092,Reactive,success
+12,1093,Fuzzy v1,success
+12,1093,Fuzzy v2a (final),success
+12,1093,Reactive,success
+12,1094,Fuzzy v1,success
+12,1094,Fuzzy v2a (final),success
+12,1094,Reactive,success
+12,1095,Fuzzy v1,success
+12,1095,Fuzzy v2a (final),collision
+12,1095,Reactive,success
+12,1096,Fuzzy v1,success
+12,1096,Fuzzy v2a (final),collision
+12,1096,Reactive,success
+12,1097,Fuzzy v1,timeout
+12,1097,Fuzzy v2a (final),timeout
+12,1097,Reactive,success
+12,1098,Fuzzy v1,success
+12,1098,Fuzzy v2a (final),success
+12,1098,Reactive,success
+12,1099,Fuzzy v1,success
+12,1099,Fuzzy v2a (final),success
+12,1099,Reactive,success
+12,1100,Fuzzy v1,success
+12,1100,Fuzzy v2a (final),success
+12,1100,Reactive,success
+12,1101,Fuzzy v1,success
+12,1101,Fuzzy v2a (final),success
+12,1101,Reactive,success
+12,1102,Fuzzy v1,success
+12,1102,Fuzzy v2a (final),success
+12,1102,Reactive,success
+12,1103,Fuzzy v1,collision
+12,1103,Fuzzy v2a (final),success
+12,1103,Reactive,success
+12,1104,Fuzzy v1,collision
+12,1104,Fuzzy v2a (final),success
+12,1104,Reactive,success
+12,1105,Fuzzy v1,collision
+12,1105,Fuzzy v2a (final),collision
+12,1105,Reactive,success
+12,1106,Fuzzy v1,collision
+12,1106,Fuzzy v2a (final),success
+12,1106,Reactive,success
+12,1107,Fuzzy v1,success
+12,1107,Fuzzy v2a (final),success
+12,1107,Reactive,success
+12,1108,Fuzzy v1,success
+12,1108,Fuzzy v2a (final),success
+12,1108,Reactive,success
+12,1109,Fuzzy v1,success
+12,1109,Fuzzy v2a (final),success
+12,1109,Reactive,success
+12,1110,Fuzzy v1,success
+12,1110,Fuzzy v2a (final),success
+12,1110,Reactive,success
+12,1111,Fuzzy v1,success
+12,1111,Fuzzy v2a (final),success
+12,1111,Reactive,success
+12,1112,Fuzzy v1,success
+12,1112,Fuzzy v2a (final),success
+12,1112,Reactive,success
+12,1113,Fuzzy v1,success
+12,1113,Fuzzy v2a (final),success
+12,1113,Reactive,success
+12,1114,Fuzzy v1,success
+12,1114,Fuzzy v2a (final),success
+12,1114,Reactive,success
+12,1115,Fuzzy v1,collision
+12,1115,Fuzzy v2a (final),success
+12,1115,Reactive,success
+12,1116,Fuzzy v1,success
+12,1116,Fuzzy v2a (final),success
+12,1116,Reactive,success
+12,1117,Fuzzy v1,success
+12,1117,Fuzzy v2a (final),success
+12,1117,Reactive,success
+12,1118,Fuzzy v1,success
+12,1118,Fuzzy v2a (final),success
+12,1118,Reactive,success
+12,1119,Fuzzy v1,success
+12,1119,Fuzzy v2a (final),success
+12,1119,Reactive,success
+12,1120,Fuzzy v1,success
+12,1120,Fuzzy v2a (final),success
+12,1120,Reactive,success
+12,1121,Fuzzy v1,collision
+12,1121,Fuzzy v2a (final),collision
+12,1121,Reactive,success
+12,1122,Fuzzy v1,success
+12,1122,Fuzzy v2a (final),success
+12,1122,Reactive,success
+12,1123,Fuzzy v1,success
+12,1123,Fuzzy v2a (final),success
+12,1123,Reactive,success
+12,1124,Fuzzy v1,collision
+12,1124,Fuzzy v2a (final),success
+12,1124,Reactive,success
+12,1125,Fuzzy v1,success
+12,1125,Fuzzy v2a (final),success
+12,1125,Reactive,success
+12,1126,Fuzzy v1,success
+12,1126,Fuzzy v2a (final),success
+12,1126,Reactive,success
+12,1127,Fuzzy v1,success
+12,1127,Fuzzy v2a (final),success
+12,1127,Reactive,success
+12,1128,Fuzzy v1,success
+12,1128,Fuzzy v2a (final),success
+12,1128,Reactive,success
+12,1129,Fuzzy v1,collision
+12,1129,Fuzzy v2a (final),success
+12,1129,Reactive,success
+12,1130,Fuzzy v1,success
+12,1130,Fuzzy v2a (final),success
+12,1130,Reactive,success
+12,1131,Fuzzy v1,success
+12,1131,Fuzzy v2a (final),success
+12,1131,Reactive,success
+12,1132,Fuzzy v1,success
+12,1132,Fuzzy v2a (final),success
+12,1132,Reactive,success
+12,1133,Fuzzy v1,success
+12,1133,Fuzzy v2a (final),timeout
+12,1133,Reactive,success
+12,1134,Fuzzy v1,success
+12,1134,Fuzzy v2a (final),success
+12,1134,Reactive,success
+12,1135,Fuzzy v1,collision
+12,1135,Fuzzy v2a (final),success
+12,1135,Reactive,success
+12,1136,Fuzzy v1,collision
+12,1136,Fuzzy v2a (final),success
+12,1136,Reactive,success
+12,1137,Fuzzy v1,success
+12,1137,Fuzzy v2a (final),success
+12,1137,Reactive,success
+12,1138,Fuzzy v1,success
+12,1138,Fuzzy v2a (final),success
+12,1138,Reactive,success
+12,1139,Fuzzy v1,success
+12,1139,Fuzzy v2a (final),success
+12,1139,Reactive,success
+12,1140,Fuzzy v1,success
+12,1140,Fuzzy v2a (final),success
+12,1140,Reactive,success
+12,1141,Fuzzy v1,collision
+12,1141,Fuzzy v2a (final),success
+12,1141,Reactive,success
+12,1142,Fuzzy v1,success
+12,1142,Fuzzy v2a (final),success
+12,1142,Reactive,success
+12,1143,Fuzzy v1,collision
+12,1143,Fuzzy v2a (final),success
+12,1143,Reactive,success
+12,1144,Fuzzy v1,success
+12,1144,Fuzzy v2a (final),success
+12,1144,Reactive,success
+12,1145,Fuzzy v1,collision
+12,1145,Fuzzy v2a (final),success
+12,1145,Reactive,success
+12,1146,Fuzzy v1,success
+12,1146,Fuzzy v2a (final),timeout
+12,1146,Reactive,success
+12,1147,Fuzzy v1,success
+12,1147,Fuzzy v2a (final),success
+12,1147,Reactive,success
+12,1148,Fuzzy v1,success
+12,1148,Fuzzy v2a (final),collision
+12,1148,Reactive,success
+12,1149,Fuzzy v1,success
+12,1149,Fuzzy v2a (final),success
+12,1149,Reactive,success
+12,1150,Fuzzy v1,collision
+12,1150,Fuzzy v2a (final),success
+12,1150,Reactive,success
+12,1151,Fuzzy v1,success
+12,1151,Fuzzy v2a (final),success
+12,1151,Reactive,success
+12,1152,Fuzzy v1,success
+12,1152,Fuzzy v2a (final),success
+12,1152,Reactive,success
+12,1153,Fuzzy v1,success
+12,1153,Fuzzy v2a (final),success
+12,1153,Reactive,success
+12,1154,Fuzzy v1,success
+12,1154,Fuzzy v2a (final),success
+12,1154,Reactive,success
+12,1155,Fuzzy v1,success
+12,1155,Fuzzy v2a (final),success
+12,1155,Reactive,success
+12,1156,Fuzzy v1,collision
+12,1156,Fuzzy v2a (final),collision
+12,1156,Reactive,success
+12,1157,Fuzzy v1,success
+12,1157,Fuzzy v2a (final),success
+12,1157,Reactive,success
+12,1158,Fuzzy v1,success
+12,1158,Fuzzy v2a (final),success
+12,1158,Reactive,success
+12,1159,Fuzzy v1,collision
+12,1159,Fuzzy v2a (final),timeout
+12,1159,Reactive,success
+12,1160,Fuzzy v1,collision
+12,1160,Fuzzy v2a (final),collision
+12,1160,Reactive,success
+12,1161,Fuzzy v1,success
+12,1161,Fuzzy v2a (final),success
+12,1161,Reactive,success
+12,1162,Fuzzy v1,success
+12,1162,Fuzzy v2a (final),success
+12,1162,Reactive,success
+12,1163,Fuzzy v1,success
+12,1163,Fuzzy v2a (final),success
+12,1163,Reactive,success
+12,1164,Fuzzy v1,success
+12,1164,Fuzzy v2a (final),success
+12,1164,Reactive,success
+12,1165,Fuzzy v1,success
+12,1165,Fuzzy v2a (final),timeout
+12,1165,Reactive,success
+12,1166,Fuzzy v1,success
+12,1166,Fuzzy v2a (final),success
+12,1166,Reactive,success
+12,1167,Fuzzy v1,success
+12,1167,Fuzzy v2a (final),success
+12,1167,Reactive,success
+12,1168,Fuzzy v1,success
+12,1168,Fuzzy v2a (final),success
+12,1168,Reactive,success
+12,1169,Fuzzy v1,collision
+12,1169,Fuzzy v2a (final),success
+12,1169,Reactive,success
+12,1170,Fuzzy v1,timeout
+12,1170,Fuzzy v2a (final),timeout
+12,1170,Reactive,success
+12,1171,Fuzzy v1,success
+12,1171,Fuzzy v2a (final),success
+12,1171,Reactive,success
+12,1172,Fuzzy v1,success
+12,1172,Fuzzy v2a (final),success
+12,1172,Reactive,success
+12,1173,Fuzzy v1,success
+12,1173,Fuzzy v2a (final),success
+12,1173,Reactive,success
+12,1174,Fuzzy v1,success
+12,1174,Fuzzy v2a (final),success
+12,1174,Reactive,success
+12,1175,Fuzzy v1,collision
+12,1175,Fuzzy v2a (final),success
+12,1175,Reactive,success
+12,1176,Fuzzy v1,success
+12,1176,Fuzzy v2a (final),success
+12,1176,Reactive,success
+12,1177,Fuzzy v1,success
+12,1177,Fuzzy v2a (final),success
+12,1177,Reactive,success
+12,1178,Fuzzy v1,success
+12,1178,Fuzzy v2a (final),success
+12,1178,Reactive,success
+12,1179,Fuzzy v1,collision
+12,1179,Fuzzy v2a (final),success
+12,1179,Reactive,success
+12,1180,Fuzzy v1,collision
+12,1180,Fuzzy v2a (final),success
+12,1180,Reactive,success
+12,1181,Fuzzy v1,success
+12,1181,Fuzzy v2a (final),success
+12,1181,Reactive,success
+12,1182,Fuzzy v1,success
+12,1182,Fuzzy v2a (final),success
+12,1182,Reactive,success
+12,1183,Fuzzy v1,success
+12,1183,Fuzzy v2a (final),success
+12,1183,Reactive,success
+12,1184,Fuzzy v1,success
+12,1184,Fuzzy v2a (final),success
+12,1184,Reactive,success
+12,1185,Fuzzy v1,success
+12,1185,Fuzzy v2a (final),success
+12,1185,Reactive,success
+12,1186,Fuzzy v1,collision
+12,1186,Fuzzy v2a (final),success
+12,1186,Reactive,success
+12,1187,Fuzzy v1,success
+12,1187,Fuzzy v2a (final),success
+12,1187,Reactive,success
+12,1188,Fuzzy v1,success
+12,1188,Fuzzy v2a (final),success
+12,1188,Reactive,success
+12,1189,Fuzzy v1,success
+12,1189,Fuzzy v2a (final),success
+12,1189,Reactive,success
+12,1190,Fuzzy v1,success
+12,1190,Fuzzy v2a (final),success
+12,1190,Reactive,success
+12,1191,Fuzzy v1,collision
+12,1191,Fuzzy v2a (final),success
+12,1191,Reactive,success
+12,1192,Fuzzy v1,success
+12,1192,Fuzzy v2a (final),success
+12,1192,Reactive,collision
+12,1193,Fuzzy v1,success
+12,1193,Fuzzy v2a (final),success
+12,1193,Reactive,success
+12,1194,Fuzzy v1,success
+12,1194,Fuzzy v2a (final),success
+12,1194,Reactive,success
+12,1195,Fuzzy v1,collision
+12,1195,Fuzzy v2a (final),collision
+12,1195,Reactive,success
+12,1196,Fuzzy v1,success
+12,1196,Fuzzy v2a (final),success
+12,1196,Reactive,success
+12,1197,Fuzzy v1,collision
+12,1197,Fuzzy v2a (final),timeout
+12,1197,Reactive,success
+12,1198,Fuzzy v1,success
+12,1198,Fuzzy v2a (final),success
+12,1198,Reactive,success
+12,1199,Fuzzy v1,success
+12,1199,Fuzzy v2a (final),success
+12,1199,Reactive,success
+18,1000,Fuzzy v1,success
+18,1000,Fuzzy v2a (final),success
+18,1000,Reactive,success
+18,1001,Fuzzy v1,collision
+18,1001,Fuzzy v2a (final),success
+18,1001,Reactive,success
+18,1002,Fuzzy v1,success
+18,1002,Fuzzy v2a (final),success
+18,1002,Reactive,success
+18,1003,Fuzzy v1,success
+18,1003,Fuzzy v2a (final),success
+18,1003,Reactive,success
+18,1004,Fuzzy v1,collision
+18,1004,Fuzzy v2a (final),timeout
+18,1004,Reactive,success
+18,1005,Fuzzy v1,success
+18,1005,Fuzzy v2a (final),success
+18,1005,Reactive,success
+18,1006,Fuzzy v1,success
+18,1006,Fuzzy v2a (final),success
+18,1006,Reactive,success
+18,1007,Fuzzy v1,success
+18,1007,Fuzzy v2a (final),timeout
+18,1007,Reactive,success
+18,1008,Fuzzy v1,collision
+18,1008,Fuzzy v2a (final),success
+18,1008,Reactive,success
+18,1009,Fuzzy v1,success
+18,1009,Fuzzy v2a (final),success
+18,1009,Reactive,success
+18,1010,Fuzzy v1,success
+18,1010,Fuzzy v2a (final),success
+18,1010,Reactive,success
+18,1011,Fuzzy v1,collision
+18,1011,Fuzzy v2a (final),collision
+18,1011,Reactive,success
+18,1012,Fuzzy v1,success
+18,1012,Fuzzy v2a (final),success
+18,1012,Reactive,success
+18,1013,Fuzzy v1,success
+18,1013,Fuzzy v2a (final),success
+18,1013,Reactive,success
+18,1014,Fuzzy v1,success
+18,1014,Fuzzy v2a (final),timeout
+18,1014,Reactive,success
+18,1015,Fuzzy v1,success
+18,1015,Fuzzy v2a (final),success
+18,1015,Reactive,success
+18,1016,Fuzzy v1,collision
+18,1016,Fuzzy v2a (final),collision
+18,1016,Reactive,success
+18,1017,Fuzzy v1,success
+18,1017,Fuzzy v2a (final),success
+18,1017,Reactive,success
+18,1018,Fuzzy v1,success
+18,1018,Fuzzy v2a (final),success
+18,1018,Reactive,success
+18,1019,Fuzzy v1,success
+18,1019,Fuzzy v2a (final),success
+18,1019,Reactive,success
+18,1020,Fuzzy v1,success
+18,1020,Fuzzy v2a (final),success
+18,1020,Reactive,success
+18,1021,Fuzzy v1,success
+18,1021,Fuzzy v2a (final),timeout
+18,1021,Reactive,success
+18,1022,Fuzzy v1,success
+18,1022,Fuzzy v2a (final),success
+18,1022,Reactive,success
+18,1023,Fuzzy v1,success
+18,1023,Fuzzy v2a (final),success
+18,1023,Reactive,success
+18,1024,Fuzzy v1,collision
+18,1024,Fuzzy v2a (final),timeout
+18,1024,Reactive,success
+18,1025,Fuzzy v1,success
+18,1025,Fuzzy v2a (final),success
+18,1025,Reactive,success
+18,1026,Fuzzy v1,success
+18,1026,Fuzzy v2a (final),success
+18,1026,Reactive,success
+18,1027,Fuzzy v1,success
+18,1027,Fuzzy v2a (final),success
+18,1027,Reactive,success
+18,1028,Fuzzy v1,success
+18,1028,Fuzzy v2a (final),success
+18,1028,Reactive,success
+18,1029,Fuzzy v1,success
+18,1029,Fuzzy v2a (final),success
+18,1029,Reactive,success
+18,1030,Fuzzy v1,collision
+18,1030,Fuzzy v2a (final),success
+18,1030,Reactive,success
+18,1031,Fuzzy v1,success
+18,1031,Fuzzy v2a (final),timeout
+18,1031,Reactive,success
+18,1032,Fuzzy v1,collision
+18,1032,Fuzzy v2a (final),collision
+18,1032,Reactive,success
+18,1033,Fuzzy v1,success
+18,1033,Fuzzy v2a (final),success
+18,1033,Reactive,success
+18,1034,Fuzzy v1,collision
+18,1034,Fuzzy v2a (final),timeout
+18,1034,Reactive,success
+18,1035,Fuzzy v1,collision
+18,1035,Fuzzy v2a (final),collision
+18,1035,Reactive,success
+18,1036,Fuzzy v1,success
+18,1036,Fuzzy v2a (final),collision
+18,1036,Reactive,success
+18,1037,Fuzzy v1,success
+18,1037,Fuzzy v2a (final),success
+18,1037,Reactive,success
+18,1038,Fuzzy v1,collision
+18,1038,Fuzzy v2a (final),timeout
+18,1038,Reactive,success
+18,1039,Fuzzy v1,success
+18,1039,Fuzzy v2a (final),success
+18,1039,Reactive,success
+18,1040,Fuzzy v1,collision
+18,1040,Fuzzy v2a (final),timeout
+18,1040,Reactive,success
+18,1041,Fuzzy v1,success
+18,1041,Fuzzy v2a (final),timeout
+18,1041,Reactive,success
+18,1042,Fuzzy v1,success
+18,1042,Fuzzy v2a (final),collision
+18,1042,Reactive,success
+18,1043,Fuzzy v1,collision
+18,1043,Fuzzy v2a (final),timeout
+18,1043,Reactive,success
+18,1044,Fuzzy v1,success
+18,1044,Fuzzy v2a (final),success
+18,1044,Reactive,success
+18,1045,Fuzzy v1,collision
+18,1045,Fuzzy v2a (final),timeout
+18,1045,Reactive,success
+18,1046,Fuzzy v1,success
+18,1046,Fuzzy v2a (final),collision
+18,1046,Reactive,success
+18,1047,Fuzzy v1,collision
+18,1047,Fuzzy v2a (final),success
+18,1047,Reactive,success
+18,1048,Fuzzy v1,success
+18,1048,Fuzzy v2a (final),success
+18,1048,Reactive,success
+18,1049,Fuzzy v1,collision
+18,1049,Fuzzy v2a (final),timeout
+18,1049,Reactive,success
+18,1050,Fuzzy v1,success
+18,1050,Fuzzy v2a (final),success
+18,1050,Reactive,success
+18,1051,Fuzzy v1,success
+18,1051,Fuzzy v2a (final),success
+18,1051,Reactive,success
+18,1052,Fuzzy v1,success
+18,1052,Fuzzy v2a (final),success
+18,1052,Reactive,success
+18,1053,Fuzzy v1,success
+18,1053,Fuzzy v2a (final),timeout
+18,1053,Reactive,success
+18,1054,Fuzzy v1,success
+18,1054,Fuzzy v2a (final),timeout
+18,1054,Reactive,success
+18,1055,Fuzzy v1,success
+18,1055,Fuzzy v2a (final),success
+18,1055,Reactive,success
+18,1056,Fuzzy v1,collision
+18,1056,Fuzzy v2a (final),success
+18,1056,Reactive,success
+18,1057,Fuzzy v1,success
+18,1057,Fuzzy v2a (final),success
+18,1057,Reactive,success
+18,1058,Fuzzy v1,collision
+18,1058,Fuzzy v2a (final),collision
+18,1058,Reactive,success
+18,1059,Fuzzy v1,collision
+18,1059,Fuzzy v2a (final),success
+18,1059,Reactive,success
+18,1060,Fuzzy v1,collision
+18,1060,Fuzzy v2a (final),success
+18,1060,Reactive,success
+18,1061,Fuzzy v1,collision
+18,1061,Fuzzy v2a (final),success
+18,1061,Reactive,success
+18,1062,Fuzzy v1,success
+18,1062,Fuzzy v2a (final),timeout
+18,1062,Reactive,success
+18,1063,Fuzzy v1,collision
+18,1063,Fuzzy v2a (final),collision
+18,1063,Reactive,success
+18,1064,Fuzzy v1,success
+18,1064,Fuzzy v2a (final),success
+18,1064,Reactive,success
+18,1065,Fuzzy v1,collision
+18,1065,Fuzzy v2a (final),success
+18,1065,Reactive,success
+18,1066,Fuzzy v1,collision
+18,1066,Fuzzy v2a (final),success
+18,1066,Reactive,success
+18,1067,Fuzzy v1,collision
+18,1067,Fuzzy v2a (final),collision
+18,1067,Reactive,success
+18,1068,Fuzzy v1,success
+18,1068,Fuzzy v2a (final),collision
+18,1068,Reactive,success
+18,1069,Fuzzy v1,success
+18,1069,Fuzzy v2a (final),success
+18,1069,Reactive,success
+18,1070,Fuzzy v1,success
+18,1070,Fuzzy v2a (final),collision
+18,1070,Reactive,success
+18,1071,Fuzzy v1,success
+18,1071,Fuzzy v2a (final),collision
+18,1071,Reactive,success
+18,1072,Fuzzy v1,success
+18,1072,Fuzzy v2a (final),success
+18,1072,Reactive,success
+18,1073,Fuzzy v1,success
+18,1073,Fuzzy v2a (final),success
+18,1073,Reactive,success
+18,1074,Fuzzy v1,collision
+18,1074,Fuzzy v2a (final),success
+18,1074,Reactive,success
+18,1075,Fuzzy v1,success
+18,1075,Fuzzy v2a (final),success
+18,1075,Reactive,success
+18,1076,Fuzzy v1,collision
+18,1076,Fuzzy v2a (final),timeout
+18,1076,Reactive,success
+18,1077,Fuzzy v1,success
+18,1077,Fuzzy v2a (final),success
+18,1077,Reactive,success
+18,1078,Fuzzy v1,collision
+18,1078,Fuzzy v2a (final),success
+18,1078,Reactive,success
+18,1079,Fuzzy v1,success
+18,1079,Fuzzy v2a (final),collision
+18,1079,Reactive,success
+18,1080,Fuzzy v1,collision
+18,1080,Fuzzy v2a (final),timeout
+18,1080,Reactive,success
+18,1081,Fuzzy v1,success
+18,1081,Fuzzy v2a (final),timeout
+18,1081,Reactive,success
+18,1082,Fuzzy v1,collision
+18,1082,Fuzzy v2a (final),timeout
+18,1082,Reactive,success
+18,1083,Fuzzy v1,success
+18,1083,Fuzzy v2a (final),success
+18,1083,Reactive,success
+18,1084,Fuzzy v1,success
+18,1084,Fuzzy v2a (final),success
+18,1084,Reactive,success
+18,1085,Fuzzy v1,success
+18,1085,Fuzzy v2a (final),success
+18,1085,Reactive,success
+18,1086,Fuzzy v1,success
+18,1086,Fuzzy v2a (final),success
+18,1086,Reactive,success
+18,1087,Fuzzy v1,collision
+18,1087,Fuzzy v2a (final),success
+18,1087,Reactive,success
+18,1088,Fuzzy v1,success
+18,1088,Fuzzy v2a (final),success
+18,1088,Reactive,success
+18,1089,Fuzzy v1,collision
+18,1089,Fuzzy v2a (final),success
+18,1089,Reactive,success
+18,1090,Fuzzy v1,collision
+18,1090,Fuzzy v2a (final),success
+18,1090,Reactive,success
+18,1091,Fuzzy v1,success
+18,1091,Fuzzy v2a (final),collision
+18,1091,Reactive,success
+18,1092,Fuzzy v1,collision
+18,1092,Fuzzy v2a (final),success
+18,1092,Reactive,success
+18,1093,Fuzzy v1,success
+18,1093,Fuzzy v2a (final),timeout
+18,1093,Reactive,success
+18,1094,Fuzzy v1,success
+18,1094,Fuzzy v2a (final),success
+18,1094,Reactive,success
+18,1095,Fuzzy v1,collision
+18,1095,Fuzzy v2a (final),collision
+18,1095,Reactive,success
+18,1096,Fuzzy v1,success
+18,1096,Fuzzy v2a (final),timeout
+18,1096,Reactive,success
+18,1097,Fuzzy v1,success
+18,1097,Fuzzy v2a (final),timeout
+18,1097,Reactive,success
+18,1098,Fuzzy v1,success
+18,1098,Fuzzy v2a (final),success
+18,1098,Reactive,success
+18,1099,Fuzzy v1,collision
+18,1099,Fuzzy v2a (final),success
+18,1099,Reactive,success
+18,1100,Fuzzy v1,success
+18,1100,Fuzzy v2a (final),success
+18,1100,Reactive,success
+18,1101,Fuzzy v1,success
+18,1101,Fuzzy v2a (final),success
+18,1101,Reactive,success
+18,1102,Fuzzy v1,success
+18,1102,Fuzzy v2a (final),success
+18,1102,Reactive,success
+18,1103,Fuzzy v1,collision
+18,1103,Fuzzy v2a (final),success
+18,1103,Reactive,success
+18,1104,Fuzzy v1,collision
+18,1104,Fuzzy v2a (final),success
+18,1104,Reactive,success
+18,1105,Fuzzy v1,collision
+18,1105,Fuzzy v2a (final),collision
+18,1105,Reactive,success
+18,1106,Fuzzy v1,collision
+18,1106,Fuzzy v2a (final),success
+18,1106,Reactive,success
+18,1107,Fuzzy v1,success
+18,1107,Fuzzy v2a (final),timeout
+18,1107,Reactive,success
+18,1108,Fuzzy v1,success
+18,1108,Fuzzy v2a (final),success
+18,1108,Reactive,success
+18,1109,Fuzzy v1,success
+18,1109,Fuzzy v2a (final),success
+18,1109,Reactive,success
+18,1110,Fuzzy v1,success
+18,1110,Fuzzy v2a (final),collision
+18,1110,Reactive,success
+18,1111,Fuzzy v1,collision
+18,1111,Fuzzy v2a (final),collision
+18,1111,Reactive,success
+18,1112,Fuzzy v1,success
+18,1112,Fuzzy v2a (final),success
+18,1112,Reactive,success
+18,1113,Fuzzy v1,success
+18,1113,Fuzzy v2a (final),success
+18,1113,Reactive,success
+18,1114,Fuzzy v1,success
+18,1114,Fuzzy v2a (final),success
+18,1114,Reactive,success
+18,1115,Fuzzy v1,success
+18,1115,Fuzzy v2a (final),success
+18,1115,Reactive,success
+18,1116,Fuzzy v1,collision
+18,1116,Fuzzy v2a (final),success
+18,1116,Reactive,success
+18,1117,Fuzzy v1,success
+18,1117,Fuzzy v2a (final),success
+18,1117,Reactive,success
+18,1118,Fuzzy v1,success
+18,1118,Fuzzy v2a (final),success
+18,1118,Reactive,success
+18,1119,Fuzzy v1,success
+18,1119,Fuzzy v2a (final),success
+18,1119,Reactive,success
+18,1120,Fuzzy v1,success
+18,1120,Fuzzy v2a (final),success
+18,1120,Reactive,success
+18,1121,Fuzzy v1,collision
+18,1121,Fuzzy v2a (final),collision
+18,1121,Reactive,success
+18,1122,Fuzzy v1,success
+18,1122,Fuzzy v2a (final),collision
+18,1122,Reactive,success
+18,1123,Fuzzy v1,success
+18,1123,Fuzzy v2a (final),timeout
+18,1123,Reactive,success
+18,1124,Fuzzy v1,success
+18,1124,Fuzzy v2a (final),success
+18,1124,Reactive,success
+18,1125,Fuzzy v1,collision
+18,1125,Fuzzy v2a (final),success
+18,1125,Reactive,success
+18,1126,Fuzzy v1,collision
+18,1126,Fuzzy v2a (final),collision
+18,1126,Reactive,success
+18,1127,Fuzzy v1,success
+18,1127,Fuzzy v2a (final),success
+18,1127,Reactive,success
+18,1128,Fuzzy v1,success
+18,1128,Fuzzy v2a (final),success
+18,1128,Reactive,success
+18,1129,Fuzzy v1,collision
+18,1129,Fuzzy v2a (final),success
+18,1129,Reactive,success
+18,1130,Fuzzy v1,success
+18,1130,Fuzzy v2a (final),success
+18,1130,Reactive,success
+18,1131,Fuzzy v1,collision
+18,1131,Fuzzy v2a (final),success
+18,1131,Reactive,success
+18,1132,Fuzzy v1,success
+18,1132,Fuzzy v2a (final),success
+18,1132,Reactive,success
+18,1133,Fuzzy v1,success
+18,1133,Fuzzy v2a (final),timeout
+18,1133,Reactive,success
+18,1134,Fuzzy v1,success
+18,1134,Fuzzy v2a (final),success
+18,1134,Reactive,success
+18,1135,Fuzzy v1,success
+18,1135,Fuzzy v2a (final),success
+18,1135,Reactive,success
+18,1136,Fuzzy v1,success
+18,1136,Fuzzy v2a (final),success
+18,1136,Reactive,success
+18,1137,Fuzzy v1,collision
+18,1137,Fuzzy v2a (final),success
+18,1137,Reactive,success
+18,1138,Fuzzy v1,success
+18,1138,Fuzzy v2a (final),timeout
+18,1138,Reactive,success
+18,1139,Fuzzy v1,success
+18,1139,Fuzzy v2a (final),success
+18,1139,Reactive,success
+18,1140,Fuzzy v1,success
+18,1140,Fuzzy v2a (final),success
+18,1140,Reactive,success
+18,1141,Fuzzy v1,collision
+18,1141,Fuzzy v2a (final),collision
+18,1141,Reactive,success
+18,1142,Fuzzy v1,success
+18,1142,Fuzzy v2a (final),success
+18,1142,Reactive,success
+18,1143,Fuzzy v1,success
+18,1143,Fuzzy v2a (final),success
+18,1143,Reactive,success
+18,1144,Fuzzy v1,success
+18,1144,Fuzzy v2a (final),success
+18,1144,Reactive,success
+18,1145,Fuzzy v1,collision
+18,1145,Fuzzy v2a (final),success
+18,1145,Reactive,success
+18,1146,Fuzzy v1,success
+18,1146,Fuzzy v2a (final),timeout
+18,1146,Reactive,success
+18,1147,Fuzzy v1,collision
+18,1147,Fuzzy v2a (final),success
+18,1147,Reactive,success
+18,1148,Fuzzy v1,collision
+18,1148,Fuzzy v2a (final),success
+18,1148,Reactive,success
+18,1149,Fuzzy v1,collision
+18,1149,Fuzzy v2a (final),success
+18,1149,Reactive,success
+18,1150,Fuzzy v1,collision
+18,1150,Fuzzy v2a (final),collision
+18,1150,Reactive,success
+18,1151,Fuzzy v1,collision
+18,1151,Fuzzy v2a (final),success
+18,1151,Reactive,success
+18,1152,Fuzzy v1,success
+18,1152,Fuzzy v2a (final),success
+18,1152,Reactive,success
+18,1153,Fuzzy v1,success
+18,1153,Fuzzy v2a (final),success
+18,1153,Reactive,success
+18,1154,Fuzzy v1,collision
+18,1154,Fuzzy v2a (final),success
+18,1154,Reactive,success
+18,1155,Fuzzy v1,success
+18,1155,Fuzzy v2a (final),success
+18,1155,Reactive,success
+18,1156,Fuzzy v1,collision
+18,1156,Fuzzy v2a (final),collision
+18,1156,Reactive,success
+18,1157,Fuzzy v1,success
+18,1157,Fuzzy v2a (final),success
+18,1157,Reactive,success
+18,1158,Fuzzy v1,collision
+18,1158,Fuzzy v2a (final),success
+18,1158,Reactive,success
+18,1159,Fuzzy v1,collision
+18,1159,Fuzzy v2a (final),timeout
+18,1159,Reactive,success
+18,1160,Fuzzy v1,success
+18,1160,Fuzzy v2a (final),collision
+18,1160,Reactive,success
+18,1161,Fuzzy v1,collision
+18,1161,Fuzzy v2a (final),success
+18,1161,Reactive,success
+18,1162,Fuzzy v1,collision
+18,1162,Fuzzy v2a (final),success
+18,1162,Reactive,success
+18,1163,Fuzzy v1,success
+18,1163,Fuzzy v2a (final),collision
+18,1163,Reactive,success
+18,1164,Fuzzy v1,success
+18,1164,Fuzzy v2a (final),success
+18,1164,Reactive,success
+18,1165,Fuzzy v1,collision
+18,1165,Fuzzy v2a (final),timeout
+18,1165,Reactive,success
+18,1166,Fuzzy v1,success
+18,1166,Fuzzy v2a (final),success
+18,1166,Reactive,success
+18,1167,Fuzzy v1,success
+18,1167,Fuzzy v2a (final),success
+18,1167,Reactive,success
+18,1168,Fuzzy v1,success
+18,1168,Fuzzy v2a (final),success
+18,1168,Reactive,success
+18,1169,Fuzzy v1,collision
+18,1169,Fuzzy v2a (final),success
+18,1169,Reactive,collision
+18,1170,Fuzzy v1,timeout
+18,1170,Fuzzy v2a (final),timeout
+18,1170,Reactive,success
+18,1171,Fuzzy v1,success
+18,1171,Fuzzy v2a (final),success
+18,1171,Reactive,success
+18,1172,Fuzzy v1,success
+18,1172,Fuzzy v2a (final),success
+18,1172,Reactive,success
+18,1173,Fuzzy v1,success
+18,1173,Fuzzy v2a (final),success
+18,1173,Reactive,success
+18,1174,Fuzzy v1,success
+18,1174,Fuzzy v2a (final),success
+18,1174,Reactive,success
+18,1175,Fuzzy v1,collision
+18,1175,Fuzzy v2a (final),success
+18,1175,Reactive,success
+18,1176,Fuzzy v1,collision
+18,1176,Fuzzy v2a (final),success
+18,1176,Reactive,success
+18,1177,Fuzzy v1,success
+18,1177,Fuzzy v2a (final),success
+18,1177,Reactive,success
+18,1178,Fuzzy v1,success
+18,1178,Fuzzy v2a (final),success
+18,1178,Reactive,success
+18,1179,Fuzzy v1,collision
+18,1179,Fuzzy v2a (final),success
+18,1179,Reactive,success
+18,1180,Fuzzy v1,collision
+18,1180,Fuzzy v2a (final),success
+18,1180,Reactive,success
+18,1181,Fuzzy v1,success
+18,1181,Fuzzy v2a (final),success
+18,1181,Reactive,success
+18,1182,Fuzzy v1,success
+18,1182,Fuzzy v2a (final),success
+18,1182,Reactive,success
+18,1183,Fuzzy v1,success
+18,1183,Fuzzy v2a (final),success
+18,1183,Reactive,success
+18,1184,Fuzzy v1,success
+18,1184,Fuzzy v2a (final),success
+18,1184,Reactive,success
+18,1185,Fuzzy v1,success
+18,1185,Fuzzy v2a (final),success
+18,1185,Reactive,success
+18,1186,Fuzzy v1,success
+18,1186,Fuzzy v2a (final),success
+18,1186,Reactive,success
+18,1187,Fuzzy v1,success
+18,1187,Fuzzy v2a (final),success
+18,1187,Reactive,success
+18,1188,Fuzzy v1,success
+18,1188,Fuzzy v2a (final),success
+18,1188,Reactive,success
+18,1189,Fuzzy v1,success
+18,1189,Fuzzy v2a (final),success
+18,1189,Reactive,success
+18,1190,Fuzzy v1,success
+18,1190,Fuzzy v2a (final),success
+18,1190,Reactive,success
+18,1191,Fuzzy v1,success
+18,1191,Fuzzy v2a (final),success
+18,1191,Reactive,success
+18,1192,Fuzzy v1,success
+18,1192,Fuzzy v2a (final),collision
+18,1192,Reactive,collision
+18,1193,Fuzzy v1,success
+18,1193,Fuzzy v2a (final),success
+18,1193,Reactive,success
+18,1194,Fuzzy v1,collision
+18,1194,Fuzzy v2a (final),collision
+18,1194,Reactive,success
+18,1195,Fuzzy v1,success
+18,1195,Fuzzy v2a (final),success
+18,1195,Reactive,success
+18,1196,Fuzzy v1,collision
+18,1196,Fuzzy v2a (final),success
+18,1196,Reactive,success
+18,1197,Fuzzy v1,success
+18,1197,Fuzzy v2a (final),success
+18,1197,Reactive,success
+18,1198,Fuzzy v1,success
+18,1198,Fuzzy v2a (final),success
+18,1198,Reactive,success
+18,1199,Fuzzy v1,success
+18,1199,Fuzzy v2a (final),success
+18,1199,Reactive,success
