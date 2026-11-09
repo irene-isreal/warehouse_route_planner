@@ -84,7 +84,9 @@ def read_sensors(obstacles, x, y, theta, suite="3-ray"):
     )
 
 
-def simulate(world, controller, start, goal, max_steps=600, sensors="3-ray"):
+def simulate(world, controller, start, goal, max_steps=600, sensors="3-ray", log=None):
+    """Run one episode. If `log` is a list, one dict per step is appended to it:
+    the state the controller saw (x, y, readings, bearing) and the commands it produced (v, w)."""
     x, y = start
     theta = math.atan2(goal[1] - y, goal[0] - x)
     path_length, min_clear = 0.0, float("inf")
@@ -102,6 +104,10 @@ def simulate(world, controller, start, goal, max_steps=600, sensors="3-ray"):
         dist_goal = math.hypot(goal[0] - x, goal[1] - y)
         v = min(v, max(0.15, 0.8 * dist_goal))   # slow down near the goal (same rule for all controllers)
         w = max(-MAX_TURN, min(MAX_TURN, w))
+
+        if log is not None:
+            log.append({"step": step, "x": x, "y": y, "left": left, "front": front,
+                        "right": right, "bearing": bearing, "v": v, "w": w})
 
         theta += w * DT
         x += v * math.cos(theta) * DT

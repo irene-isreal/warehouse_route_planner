@@ -63,3 +63,16 @@ def test_both_controllers_reach_goal_in_empty_world():
         for suite in ("3-ray", "7-ray"):
             ep = simulate(world, ctrl, (1.0, 1.0), (10.0, 10.0), sensors=suite)
             assert ep.outcome == "success"
+
+
+
+
+def test_logging_does_not_change_the_episode():
+    world = World(20.0, [(5.0, 5.0, 1.0)])
+    plain = simulate(world, fuzzy_controller, (1.0, 1.0), (10.0, 10.0), sensors="7-ray")
+    log = []
+    logged = simulate(world, fuzzy_controller, (1.0, 1.0), (10.0, 10.0), sensors="7-ray", log=log)
+    assert plain.outcome == logged.outcome
+    assert plain.steps == logged.steps
+    assert plain.trajectory == logged.trajectory
+    assert len(log) == logged.steps

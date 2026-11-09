@@ -1,12 +1,14 @@
 import math
+import sys
 
 import pandas as pd
 
 from planner.fuzzy import fuzzy_controller, reactive_controller
-from planner.navigation import DT, random_world, simulate
+from planner.navigation import DT, random_world, read_sensors, simulate
 
 START, GOAL = (1.5, 1.5), (18.5, 18.5)
 CONTROLLERS = {"Fuzzy": fuzzy_controller, "Reactive (thresholds)": reactive_controller}
+SEEN = 1.0   # a ray reporting less than this (m) counts as "the controller could see something"
 
 
 def classify(world, ep):
@@ -20,44 +22,60 @@ def classify(world, ep):
     rel = math.atan2(oy - y1, ox - x1) - heading
     rel = abs(math.degrees(math.atan2(math.sin(rel), math.cos(rel))))
     if rel <= 30:
-        return "head-on (obstacle within 30 deg of heading)", speed
+        return "head-on", speed
     if rel <= 100:
-        return "side clip (30-100 deg off heading)", speed
-    return "rear contact (over 100 deg off heading)", speed
+        return "side clip", speed
+    return "rear contact", speed
 
 
-def diagnose(densities=(6, 12, 18), worlds=50):
-    rows = []
+def pre_impact_reading(world, ep, sensors):
+    """Smallest left/front/right reading one step before impact (heading approximated from motion)."""
+    if len(ep.trajectory) < 3:
+        return float("nan")
+    (xa, ya), (xb, yb) = ep.trajectory[-3], ep.trajectory[-2]
+    theta = math.atan2(yb - ya, xb - xa)
+    return min(read_sensors(world.obstacles, xb, yb, theta, sensors))
+
+
+def diagnose(sensors, densities=(6, 12, 18), worlds=50):
+    coll, tout = [], []
     for n in densities:
         for seed in range(worlds):
             world = random_world(seed, n, start=START, goal=GOAL)
             for name, ctrl in CONTROLLERS.items():
-                ep = simulate(world, ctrl, START, GOAL)
+                ep = simulate(world, ctrl, START, GOAL, sensors=sensors)
                 if ep.outcome == "collision":
                     kind, speed = classify(world, ep)
-                    rows.append({"obstacles": n, "controller": name, "kind": kind,
-                                 "impact_speed": speed, "steps": ep.steps})
-    return pd.DataFrame(rows)
-
-
-def paired_comparison():
-    """Compare clearance and smoothness only on worlds where BOTH controllers succeeded."""
-    df = pd.read_csv("results/fuzzy.csv")
-    ok = df[df["outcome"] == "success"]
-    wide = ok.pivot_table(index=["obstacles", "seed"], columns="controller",
-                          values=["min_clearance", "smoothness", "path_length"]).dropna()
-    print("\nWorlds where both controllers succeeded:")
-    print(wide.groupby(level="obstacles").size().to_string())
-    print("\nPaired means (same worlds for both controllers):")
-    print(wide.groupby(level="obstacles").mean().round(3).T.to_string())
+                    coll.append({"obstacles": n, "seed": seed, "controller": name,
+                                 "kind": kind, "impact_speed": speed, "steps": ep.steps,
+                                 "min_reading": pre_impact_reading(world, ep, sensors)})
+                elif ep.outcome == "timeout":
+                    x, y = ep.trajectory[-1]
+                    tout.append({"obstacles": n, "seed": seed, "controller": name,
+                                 "dist_to_goal": math.hypot(GOAL[0] - x, GOAL[1] - y)})
+    return pd.DataFrame(coll), pd.DataFrame(tout)
 
 
 if __name__ == "__main__":
-    collisions = diagnose()
-    print("Collision types (counts):")
-    print(pd.crosstab([collisions["obstacles"], collisions["controller"]],
-                      collisions["kind"]).to_string())
-    print("\nMean impact speed (m/s) and mean steps before collision:")
-    print(collisions.groupby(["obstacles", "controller"])[["impact_speed", "steps"]]
-          .mean().round(2).to_string())
-    paired_comparison()
+    sensors = sys.argv[1] if len(sys.argv) > 1 else "7-ray"
+    coll, tout = diagnose(sensors)
+    print(f"=== Sensor suite: {sensors} ===")
+
+    if coll.empty:
+        print("No collisions.")
+    else:
+        print("\nCollision types (counts):")
+        print(pd.crosstab([coll["obstacles"], coll["controller"]], coll["kind"]).to_string())
+        print("\nMean impact speed (m/s), mean steps before collision:")
+        print(coll.groupby(["obstacles", "controller"])[["impact_speed", "steps"]].mean().round(2).to_string())
+        print(f"\nMean of the smallest sensor reading one step before impact (m), "
+              f"and % of collisions where no ray saw anything within {SEEN} m:")
+        g = coll.groupby(["obstacles", "controller"])["min_reading"]
+        print(pd.DataFrame({"mean_min_reading": g.mean().round(2),
+                            "pct_unseen": g.apply(lambda s: (s >= SEEN).mean() * 100).round(1)}).to_string())
+
+    if tout.empty:
+        print("\nNo timeouts.")
+    else:
+        print("\nTimeouts: count and mean final distance to goal (m):")
+        print(tout.groupby(["obstacles", "controller"])["dist_to_goal"].agg(["count", "mean"]).round(2).to_string())
