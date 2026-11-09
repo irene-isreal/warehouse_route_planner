@@ -76,3 +76,39 @@ def test_logging_does_not_change_the_episode():
     assert plain.steps == logged.steps
     assert plain.trajectory == logged.trajectory
     assert len(log) == logged.steps
+
+
+import random
+
+from planner.fuzzy import fuzzy_dominant, fuzzy_dominant_side, make_fuzzy
+
+
+def test_make_fuzzy_with_switches_off_reproduces_the_original_controller():
+    rng = random.Random(0)
+    plain = make_fuzzy(False, False)
+    for _ in range(200):
+        args = (rng.uniform(0, 3), rng.uniform(0, 3), rng.uniform(0, 3), rng.uniform(-3.14, 3.14))
+        a, b = fuzzy_controller(*args), plain(*args)
+        assert abs(a[0] - b[0]) < 1e-9 and abs(a[1] - b[1]) < 1e-9
+
+
+def test_original_cancels_conflicting_turns_and_dominant_variant_commits():
+    # Goal is on the left, but an obstacle is close on the left (0.45 m).
+    _, w_original = fuzzy_controller(left=0.45, front=3.0, right=3.0, bearing=0.69)
+    _, w_dominant = fuzzy_dominant(left=0.45, front=3.0, right=3.0, bearing=0.69)
+    assert abs(w_original) < 1e-6
+    assert w_dominant < -0.5
+
+
+def test_side_aware_speed_slows_down_beside_a_close_obstacle():
+    v_original, _ = fuzzy_controller(left=0.45, front=3.0, right=3.0, bearing=0.0)
+    v_side, _ = fuzzy_dominant_side(left=0.45, front=3.0, right=3.0, bearing=0.0)
+    assert v_original > 0.75
+    assert v_side < 0.35
+
+
+def test_variants_reach_goal_in_empty_world():
+    world = World(20.0, [])
+    for ctrl in (fuzzy_dominant, fuzzy_dominant_side):
+        ep = simulate(world, ctrl, (1.0, 1.0), (10.0, 10.0), sensors="7-ray")
+        assert ep.outcome == "success"
