@@ -87,3 +87,9 @@ Integrate the A* route with the local controller, add dynamic (moving) obstacles
 fuzzy rule base with a learned policy, and port the planners to a compiled language.
 
 See `docs/REPORT.md` for the full write-up.
+
+## Demo
+
+![Replanning replay](results/replay.gif)
+
+A robot replans with A* as hidden blocked cells (red) are discovered.
