@@ -11,7 +11,7 @@ evaluated with reproducible experiments. A* expanded roughly path-length many ce
 warehouse layouts, against area-many for Dijkstra, but its advantage shrank to about 2x when
 the heuristic was misleading. Computing all-pairs shortest paths over a whole grid was
 impractical compared with targeted A* queries. A genetic algorithm found the exact TSP optimum
-in most small instances and improved on nearest neighbour by about 12% on larger ones. In local
+in most small instances and improved on nearest neighbour by about 12% on larger ones when seeded with the nearest-neighbour tour (7 to 10% with a random start). In local
 navigation, the simple reactive baseline was more reliable than my fuzzy controller in every
 condition tested; the fuzzy controller kept larger safety clearances at the cost of longer
 paths and more stalls, and an attempted improvement did not show a statistically established
@@ -107,8 +107,7 @@ Dijkstra's work grows with the area of the map, while A* expanded one more cell 
 length (cost + 1) in every case, because these layouts have an open border route on which the
 Manhattan heuristic is almost exact. This is A*'s best case. On the detour trap, where the
 straight line to the goal is blocked, A* expanded 209, 819, 3,239 and 12,879 cells for grids of
-20, 40, 80 and 160 against 382, 1,562, 6,322 and 25,442 for Dijkstra: an advantage of about
-1.8x to 2x instead of 10x to 60x. On 60 x 60 random-obstacle maps the fraction of solvable
+20, 40, 80 and 160 against 382, 1,562, 6,322 and 25,442 for Dijkstra: an advantage of about 1.8x to 2x instead of 9x to 55x on the open layouts (in cells expanded). On 60 x 60 random-obstacle maps the fraction of solvable
 instances fell from 100% at densities 0 and 0.1 to 93% at 0.2, 53% at 0.3 and 20% at 0.35.
 
 ### 3.2 All-pairs shortest paths
@@ -181,7 +180,7 @@ The study went through four iterations, each motivated by a diagnosis.
    not improve success on 50 worlds and made missions longer and steering rougher.
 4. **Wall sensing.** The simulator initially had invisible arena walls and some failures were
    runs leaving the arena. Letting the range sensors detect the walls (for all controllers)
-   removed this failure: no run in the final evaluation left the arena.
+   removed this failure: no run in the 200-world development evaluation left the arena (the held-out runs were not classified this way).
 
 Final evaluation, development worlds (seeds 0 to 199, 200 per density), success rate with 95%
 Wilson interval:
@@ -241,14 +240,12 @@ information.) Replanning completed every mission, which is guaranteed by the set
 planner starts from an optimistic map, so a path always exists while the goal is reachable. The
 no-replanning baseline fails by construction, since blockages are placed next to the route.
 The informative quantities are the costs: stretch is the distance travelled divided by the
-shortest path on the fully known map, and the extra planning work works out to roughly 25 to 32
-expanded cells per replan, so replans are local and cheap. Sensing range mattered more
-than the number of replans: with 20 hidden blocks, stretch fell from 1.23 (radius 1) to 1.17,
+shortest path on the fully known map, and each replan expanded roughly 25 to 32 cells on average (against 55 for the initial plan; replans start nearer the goal, so this is not a like-for-like comparison). A longer sensing range reduced both stretch and replans: with 20 hidden blocks, stretch fell from 1.23 (radius 1) to 1.17,
 1.10 and 1.05 (radius 8) while mean replans fell from 6.2 to 4.7.
 
 ## 4. Discussion
 
-**Information beats cleverness in the global layer.** A* with a good heuristic does almost no
+**A*'s advantage depends on the heuristic.** A* with a good heuristic does almost no
 wasted work on open warehouse layouts, but its advantage depends on how well the heuristic
 reflects the map; the detour trap shows the failure mode. Floyd-Warshall solves a harder problem
 than a single robot usually needs.
@@ -265,8 +262,7 @@ reliability. Fuzzy control's benefit in this study is a larger safety margin, bo
 and less smooth paths; I did not test whether a better-tuned rule base would close the
 reliability gap.
 
-**Replanning is cheap when failures are local.** Mid-mission replans cost a small fraction of a
-full plan and the main driver of path stretch was how early the robot could see a blockage.
+**Replanning added modest cost.** Replans expanded 25 to 32 cells on average against 55 for the initial plan (they also start nearer the goal), and the main driver of path stretch was how early the robot could see a blockage.
 
 ## 5. Limitations and threats to validity
 
