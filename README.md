@@ -85,3 +85,5 @@ Random seeds are fixed, so the outputs are reproducible; timings vary with the m
 
 Integrate the A* route with the local controller, add dynamic (moving) obstacles, replace the
 fuzzy rule base with a learned policy, and port the planners to a compiled language.
+
+See `docs/REPORT.md` for the full write-up.
